@@ -1,0 +1,26 @@
+@startuml
+start
+:添加脚本，定义其特征;
+:按照（协议、接口、网元、方向、消息）
+找到消息对应的特征树根节点;
+
+while (true)
+	if (当前节点<新增节点) then (yes)
+		:检查当前节点的最左子节点;
+	elseif (当前节点有右侧兄弟) then (yes)
+		:检查当前节点的右侧兄弟节点;
+	else (no)
+		:break;
+	endif
+end while
+
+:将新增特征添加为最后查找节点的兄弟;
+while (新增节点的兄弟未检查)
+	if (新增节点<兄弟节点) then (yes)
+		:将兄弟节点改为新增节点的子节点;
+	endif
+	:下一个兄弟节点;
+end while
+
+stop
+@enduml

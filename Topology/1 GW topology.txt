@@ -1,0 +1,8 @@
+node MME MME1
+node eNB eNB1
+node xGW GW1
+node PDN PDN1
+node PDN PDN2
+node PCRF PCRF1
+node OCS OCS1
+

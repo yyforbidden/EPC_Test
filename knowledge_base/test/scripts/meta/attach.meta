@@ -1,0 +1,19 @@
+{
+"scripts": [{"feature": {"protocol": "NAS",
+			 			 "direction": "RNC->SGSN",
+						 "interface": "Iu-PS-Control",
+						 "message": "Attach Request",
+						 "parameters": {}},
+			 "script": {"module": "send_attach_request",
+			 			"path": "demo_attach_req.py"}},
+
+			{"feature": {"protocol": "NAS",
+			 			 "direction": "RNC->SGSN",
+						 "interface": "Iu-PS-Control",
+						 "message": "Attach Request",
+						 "parameters": {"Attach Request.a": "1"}},
+			 "script": {"module": "send_attach_request_2",
+			 			"path": "demo_attach_req_2.py"}}
+			]
+}
+		

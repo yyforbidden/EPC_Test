@@ -1,0 +1,41 @@
+@startuml
+participant "Tool" as t
+participant "Knowledge Base" as kb
+
+t -> kb : SYN
+t <- kb : SYN ACK
+t -> kb : ACK
+
+note left of t
+分配test-id 
+end note
+
+activate t
+t -> kb : Start Test(test-id)
+deactivate t
+
+...
+
+t -> kb : Query(test-id, msg)
+t <- kb : Answer(test-id, msg)
+
+...
+
+t -> kb : Stop Test(test-id)
+activate t
+activate kb
+note left of t
+释放test-id及相关资源
+end note
+
+note right of kb
+释放test-id相关资源
+end note
+t -> kb : FIN
+deactivate t
+deactivate kb
+
+t <- kb : FIN ACK
+t -> kb : ACK
+
+@enduml

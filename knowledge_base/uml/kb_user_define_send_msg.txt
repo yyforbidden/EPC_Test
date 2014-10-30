@@ -1,0 +1,10 @@
+@startuml
+:user: as u
+(User Interface) as ui
+(Script Pool) as sp
+
+u -- ui : 新建消息及默认值：\n填写消息默认值
+u -- ui : 删除消息及默认值：\n删除指定名称的消息
+u -- ui : 修改消息及默认值：\n修改指定名称的消息中，\n参数的默认值
+ui -- sp : 操作指定的消息
+@enduml

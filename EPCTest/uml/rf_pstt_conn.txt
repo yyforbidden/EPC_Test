@@ -1,0 +1,15 @@
+@startuml
+hide footbox
+actor User
+User -> RF: Start of test case
+RF->PSTT: Syn
+RF<-PSTT: Syn Ack
+RF->PSTT: Ack
+...
+RF<->PSTT: Commands
+...
+RF -> PSTT: FIN
+RF <- PSTT: FIN Ack
+RF -> PSTT: Ack
+User <- RF: End of test case
+@enduml

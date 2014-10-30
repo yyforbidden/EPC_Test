@@ -1,0 +1,12 @@
+@startuml
+[*] --> IDLE
+IDLE --> WAIT_START: receive SEND SCRIPT / \nsend SCRIPT RECEIVED
+WAIT_START --> STARTED: receive START / \nsend STARTED
+WAIT_START --> FINISHED: receive STOP / \nsend REPORT
+WAIT_START --> FINISHED: exception / \nsend EXCEPTIOM
+STARTED -> STARTED: trigger event, set variable / \nsend EVENT or VARIABLE,\n receive EVENT or VARIABLE/\nsave event or variable
+STARTED -left-> FINISHED: script end / send REPORT
+STARTED -left-> FINISHED: receive STOP / send REPORT
+STARTED -left-> FINISHED: exception / send EXCEPTION
+FINISHED --> [*]
+@enduml

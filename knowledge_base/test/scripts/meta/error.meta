@@ -1,0 +1,11 @@
+{
+"scripts": [{"feature": {"protocol": "Error",
+			 			 "direction": "Error-dir",
+						 "interface": "ErrorInterface",
+						 "message": "Error Request",
+						 "parameters": {}},
+			 "script": {"module": "error",
+			 			"path": "demo_error.py"}}
+           ]
+}
+		

@@ -1,0 +1,14 @@
+@startuml
+:Tool: as t
+(Communication) as c
+(Script Runner) as sr
+
+note as n
+	initialize/destroy contexts 
+end note
+
+t --> c: Start test
+t --> c: Stop test
+c -> sr: start/stop
+sr -up-> n
+@enduml

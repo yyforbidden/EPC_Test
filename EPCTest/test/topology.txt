@@ -1,0 +1,18 @@
+@mme1: a=1, bb = 2, 
+ ccc=3
+@mme2
+@xgw1
+@xgw2
+@enb1
+@enb2
+
+@mme1--@xgw1 : a=1, b=2,
+ c=3
+@mme1 -- @enb1
+@mme1 -- @mme2
+@mme2--@xgw2
+@mme2--@enb2
+@xxxxx--@yyy
+dfasdfsdfa
+
+#$%^^^^

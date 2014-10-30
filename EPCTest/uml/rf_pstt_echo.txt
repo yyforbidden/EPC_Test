@@ -1,0 +1,15 @@
+@startuml
+...
+RF<-PSTT: Echo(Seq)
+RF->PSTT: Echo(Seq)
+...
+RF<-PSTT: Echo(Seq)
+RF --X PSTT: Echo(Seq)
+RF<-PSTT: Rst
+RF<-PSTT: Syn
+RF->PSTT: Syn Ack
+RF<-PSTT: Ack
+...
+
+
+@enduml

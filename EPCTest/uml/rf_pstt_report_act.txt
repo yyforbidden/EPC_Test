@@ -1,0 +1,53 @@
+@startuml
+hide footbox
+actor User
+activate User
+note left of User
+编写测试用例
+end note
+
+User --> RF: Run
+deactivate User
+activate RF
+note left of RF
+1、将RetrieveData
+     翻译为测试脚本
+2、将Check记录为
+     CheckList
+end note
+
+RF --> PSTT: SendScript
+deactivate RF
+
+PSTT --> RF: ScriptRecieved
+RF --> PSTT: Start
+PSTT --> RF: Started
+activate PSTT
+note right of PSTT
+1、加载所有的获取数据的规则与方法
+2、开始执行脚本
+3、执行过程中，按照获取数据的规则
+     与方法保存数据
+4、汇总获取到的数据，形成测试报告
+5、获取数据的规则与方法在PSTT中
+     定义，RF可以按照方法名称调用
+end note
+
+PSTT --> RF: Report
+deactivate PSTT
+activate RF
+note left of RF
+1、记录各个PSTT的
+     测试报告
+2、按照CheckList
+     中的检查规则，检查
+     测试是否每个Check
+     项目是否为True
+3、所有检查项为True则
+     测试通过
+end note
+
+RF --> User: Test Result(Pass/Fail/Error)
+deactivate RF
+
+@enduml

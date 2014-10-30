@@ -1,0 +1,119 @@
+@startuml
+class Controller {
+	kb_protocol_factory
+	
+	run()
+}
+
+class KB_ProtocolFactory {
+	protocol
+}
+
+class KB_Protocol {
+	test_id
+	context_manager
+	script_manager
+	
+	string_received()
+}
+
+class Communication {
+	script_runner
+	
+	start_comm()
+	send()
+	stop_comm()
+}
+
+class ScriptManager {
+	scripts {feature: script_tree}
+	
+	_load_scripts(path)
+	find_script(msg)
+}
+
+class ScriptTree{
+	root
+	
+	insert(paras, script)
+	find(paras, script)
+}
+
+class ScriptTreeNode{
+	script
+	paras
+	
+	add_child(node)
+	del_child(node)
+	specific_than(node)
+}
+
+class Script {
+	name
+	module
+	run()
+}
+
+class ContextManager {
+	index_list {ctxt_type : index_list}
+	contexts []
+	
+	_load_index_of_context(path)
+	get_context(ctxt_type, key)
+	get_context(ctxt_type) #last context
+	create_context(ctxt_type, **paras)
+	delete_context(ctxt)
+	delete_all_contexts()
+}
+
+class IndexList {
+	context_type
+	keys []
+	indexes {key_name : index}
+	
+	get_context(key)
+	insert_index(ctxt)
+}
+
+class Index {
+	context_type
+	key_name
+	indexes {key_value: contexts}
+	
+	get_context(key)
+	insert_index(ctxt)
+	update_index(ctxt)
+	delete_index(key)
+	delete_all_index()
+}
+
+class Context{
+	context_type
+	indexes {value tuple : index}
+	fields {name : value}
+	
+	set_field()
+	get_field()
+}
+
+Communication o- Controller: process_query()
+Communication -o Controller: send()
+Controller *-- KB_ProtocolFactory
+Controller *-- ScriptManager
+KB_ProtocolFactory --> KB_Protocol: create
+KB_ProtocolFactory o- ScriptManager
+KB_Protocol o-up- ScriptManager
+KB_Protocol *-- ContextManager
+KB_Protocol -> Script: run()
+ScriptManager *- ScriptTree
+ScriptTree *- ScriptTreeNode
+ScriptTreeNode *-- Script
+ContextManager *-left- IndexList
+ContextManager *-- Context
+ContextManager *-- Index
+IndexList o-- Index
+Index o- Context: find
+Context o-left- Index: update
+
+
+@enduml

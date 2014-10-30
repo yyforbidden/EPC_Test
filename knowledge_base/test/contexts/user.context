@@ -1,0 +1,16 @@
+[user_context]
+context_id
+imsi
+msisdn
+imei
+
+
+[nas_transaction_context]
+context_id
+ti
+
+[sccp_context]
+context_id
+sccp_id
+
+

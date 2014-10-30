@@ -1,0 +1,58 @@
+*** Settings ***
+Library           ../EPCTest/epctest.py
+
+*** Test Cases ***
+Attach & PDP Activate
+    [Setup]    Initialize Environment
+    Send    Attach Request    src=rnc    dst=sgsn    paras=imsi:"4601234567890", lai:"460123456"
+    On Recieve    Attach Accept    src=sgsn    dst=rnc
+    Send    Attach Complete    src=rnc    dst=sgsn
+    Send    Activate PDP Context Request    src=rnc    dst=sgsn
+    On Recieve    Activate PDP Context Accept    src=sgsn    dst=rnc    paras=imsi:"4601234567890", lai:"460123456"
+    Finish    rnc--sgsn
+    Retrieve Data    rnc--sgsn    result=@var1    operation=MessageCount    paras=message:"Attach Request"
+    Retrieve Data    rnc--sgsn    result=@var2    operation=MessageParameterValue    paras=message:"Attach Accept", paras_to_retrieve:"A_PARA"
+    Check    @var1+1==@var2    检查var1
+    Check    @var1==1    another check
+    Execute
+
+Attach & PDP Activate - using keyword
+    [Setup]    Initialize Environment
+    附着    rnc    sgsn    imsi=4601234567890    lai=460123456
+    PDP Activation    rnc    sgsn    imsi=4601234567890    lai=460123456
+    Finish    rnc--sgsn
+    检查var1和var2
+    Execute
+
+data driven
+    [Template]    附着
+    rnc    sgsn    imsi=4601234567890    lai=460123456
+    rnc2    sgsn2    imsi=3249832    lai=3243234
+
+*** Keywords ***
+Initialize Environment
+    Load Topology    3g_topo.txt
+    Assign    rnc    sgsn    pstt-yw-rnc1-sgsn1    127.0.0.1:30000
+
+附着
+    [Arguments]    ${rnc}    ${sgsn}    ${imsi}    ${lai}
+    Send    Attach Request    src=${rnc}    dst=${sgsn}    paras=imsi:"${imsi}", lai:"${lai}"
+    On Recieve    Attach Accept    src=${sgsn}    dst=${rnc}
+    Send    Attach Complete    src=${rnc}    dst=${sgsn}
+
+PDP Activation
+    [Arguments]    ${rnc}    ${sgsn}    ${imsi}    ${lai}
+    Send    Activate PDP Context Request    src=${rnc}    dst=${sgsn}    paras=imsi:"${imsi}", lai:"${lai}"
+    On Recieve    Activate PDP Context Accept    src=${sgsn}    dst=${rnc}
+
+Do some check
+    Retrieve Data    rnc--sgsn    result=@var1    operation=MessageCount    paras=message:"Attach Request"
+    Retrieve Data    rnc--sgsn    result=@var2    operation=MessageParameterValue    paras=message:"Attach Accept", paras_to_retrieve:"A_PARA"
+    Check    @var1+1==@var2    sample check
+    Check    @var1==1    another check
+
+检查var1和var2
+    Retrieve Data    rnc--sgsn    result=@var1    operation=MessageCount    paras=message:"Attach Request"
+    Retrieve Data    rnc--sgsn    result=@var2    operation=MessageParameterValue    paras=message:"Attach Accept", paras_to_retrieve:"A_PARA"
+    Check    @var1+1==@var2    sample check
+    Check    @var1==1    another check

@@ -1,0 +1,21 @@
+@startuml
+:Tool: as t
+(Communication) as c
+(Script Runner) as sr
+(Feature Index) as fi
+(Script Pool) as sp
+(Context Manager) as cm
+
+note as run
+	fill in default parameters
+end note
+
+t --> c: Query send message
+c --> sr: query send message
+sr --> fi: message
+fi -> sp: find receive script
+sr -> cm: find context
+sr -left-> run
+
+
+@enduml

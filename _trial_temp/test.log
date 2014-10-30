@@ -1,0 +1,3201 @@
+2014-10-29 15:36:13+0800 [-] Log opened.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContext.test_add_field <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContext.test_mod_field <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContextManager.test_clear_test <--
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'a': 1, 'c': 3, 'b': 2}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2, 3)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (6, 7)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4, 5)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('x', 'y')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'y': 2, 'x': 1}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting context into index ('x', 'y')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[{'a': 1, 'context_id': 0, 'c': 3, 'b': 2}, {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}, {'y': 2, 'x': 1, 'context_id': 2}]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={(1, 2): {'y': 2, 'x': 1, 'context_id': 2}, (6, 7): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}, (1, 2, 3): {'a': 1, 'context_id': 0, 'c': 3, 'b': 2}})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] cliearing...
+2014-10-29 15:36:13+0800 [-] destroying context: {'a': 1, 'context_id': 0, 'c': 3, 'b': 2}
+2014-10-29 15:36:13+0800 [-] context destroyed.
+2014-10-29 15:36:13+0800 [-] destroying context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] context destroyed.
+2014-10-29 15:36:13+0800 [-] destroying context: {'y': 2, 'x': 1, 'context_id': 2}
+2014-10-29 15:36:13+0800 [-] context destroyed.
+2014-10-29 15:36:13+0800 [-] After clear
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('a', 1), ('b', 2), ('c', 3))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('p1', 1), ('p2', 2))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('x', 1), ('y', 2))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContextManager.test_create_context <--
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'm': 8, 'n': 9, 'b': 4}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4, 5)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=bearer_context_1, paras={'b1': 1}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] no matching keys found.
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[{'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'x': 6, 'y': 7, 'context_id': 3, 'b': 4, 'm': 8, 'n': 9}, {'context_id': 4, 'b1': 1, 'b2': 2, 'b3': 3}]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'x': 6, 'y': 7, 'context_id': 3, 'b': 4, 'm': 8, 'n': 9}})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={(6, 7): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'x': 6, 'y': 7, 'context_id': 3, 'b': 4, 'm': 8, 'n': 9}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'x': 6, 'y': 7, 'context_id': 3, 'b': 4, 'm': 8, 'n': 9}})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] cannot find context by given keys.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContextManager.test_destroy_context <--
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'a': 1, 'c': 3, 'b': 2}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2, 3)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (6, 7)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4, 5)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('x', 'y')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[{'a': 1, 'context_id': 5, 'c': 3, 'b': 2}, {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 6, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 6, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={(6, 7): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 6, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 6, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}, (1, 2, 3): {'a': 1, 'context_id': 5, 'c': 3, 'b': 2}})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=()
+2014-10-29 15:36:13+0800 [-] found context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 6, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] destroying context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 6, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] context destroyed.
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[{'a': 1, 'context_id': 5, 'c': 3, 'b': 2}]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={(1, 2, 3): {'a': 1, 'context_id': 5, 'c': 3, 'b': 2}})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('p1', 1), ('p2', 2))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('a', 3), ('b', 4), ('c', 5))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('x', 6), ('y', 7))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=()
+2014-10-29 15:36:13+0800 [-] found context: {'a': 1, 'context_id': 5, 'c': 3, 'b': 2}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContextManager.test_get_context <--
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (6, 7)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4, 5)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('x', 'y')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'p2': 4, 'p1': 3}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[{'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 7, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}, {'p2': 4, 'context_id': 8, 'p1': 3}]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 7, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}, (3, 4): {'p2': 4, 'context_id': 8, 'p1': 3}})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={(6, 7): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 7, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 7, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('p1', 1), ('p2', 2))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 7, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('a', 3), ('b', 4), ('c', 5))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 7, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('x', 6), ('y', 7))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 7, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('m', 8), ('n', 9))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] cannot find context by given keys.
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=()
+2014-10-29 15:36:13+0800 [-] found context: {'p2': 4, 'context_id': 8, 'p1': 3}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContextManager.test_load_index_of_context <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndex.test_delete_all_indexes <--
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'context_id': 0, 'p1': 1}, (3, 4): {'p2': 4, 'context_id': 2, 'p1': 3}, (2, 3): {'p2': 3, 'context_id': 1, 'p1': 2}})
+	
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={})
+	
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndex.test_get_context <--
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'context_id': 0, 'p1': 1}})
+	
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndex.test_insert_index <--
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 1, 'p2': 2, 'p1': 1, 'context_id': 0}})
+	
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 1, 'p2': 2, 'p1': 1, 'context_id': 0}})
+	
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 1, 'p2': 2, 'p1': 1, 'context_id': 0}})
+	
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndex.test_update_index <--
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'context_id': 0, 'p1': 1}})
+	
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(10, 2): {'p2': 2, 'context_id': 0, 'p1': 10}})
+	
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(10, 2): {'p2': 2, 'context_id': 0, 'p1': 10}})
+	
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndexList.test_get_context <--
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'context_id': 0, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] cannot find context by given keys.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndexList.test_insert_index <--
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (6,)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4, 5)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('x',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={(6,): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] no matching keys found.
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={(6,): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] cannot find context by given keys.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] context type mismatch.
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={(6,): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndexList.test_update_index <--
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'context_id': 0, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={})
+	})
+	
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 10): {'p2': 10, 'context_id': 0, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 10): {'p2': 10, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 0, 'b': 4}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 10, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 0, 'b': 4}})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 10): {'p2': 10, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 0, 'b': 4, 'x': 6}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 10, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 0, 'b': 4, 'x': 6}})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={(6,): {'p2': 10, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 0, 'b': 4, 'x': 6}})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestFromClient.test_query_receive <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] KB_QueryFactory starting on 60181
+2014-10-29 15:36:13+0800 [-] Starting factory <knowledge_base.controller.KB_QueryFactory instance at 0x02951648>
+2014-10-29 15:36:13+0800 [-] (TCP Port 60181 Closed)
+2014-10-29 15:36:13+0800 [-] Stopping factory <knowledge_base.controller.KB_QueryFactory instance at 0x02951648>
+2014-10-29 15:36:13+0800 [-] Main loop terminated.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestFromClient.test_query_receive_execute_error <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] KB_QueryFactory starting on 60183
+2014-10-29 15:36:13+0800 [-] Starting factory <knowledge_base.controller.KB_QueryFactory instance at 0x02951A58>
+2014-10-29 15:36:13+0800 [-] (TCP Port 60183 Closed)
+2014-10-29 15:36:13+0800 [-] Stopping factory <knowledge_base.controller.KB_QueryFactory instance at 0x02951A58>
+2014-10-29 15:36:13+0800 [-] Main loop terminated.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestFromClient.test_query_receive_no_script <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] KB_QueryFactory starting on 60185
+2014-10-29 15:36:13+0800 [-] Starting factory <knowledge_base.controller.KB_QueryFactory instance at 0x0295DD78>
+2014-10-29 15:36:13+0800 [knowledge_base.controller.KB_QueryFactory] <KB factory>: Building protocol, address=IPv4Address(TCP, '127.0.0.1', 60186)...
+2014-10-29 15:36:13+0800 [-] (TCP Port 60185 Closed)
+2014-10-29 15:36:13+0800 [-] Stopping factory <knowledge_base.controller.KB_QueryFactory instance at 0x0295DD78>
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: received data:    +{"command": "StartTest", "request_id": "1"}   ß{"message": {"interface": "Iu-PS-Control", "layer3": {"message": "Attach Request fake", "protocol": "NAS", "parameters": {"imsi": "460001234567890"}}, "direction": "RNC->SGSN"}, "command": "QueryReceive", "request_id": "1"}   *{"command": "StopTest", "request_id": "1"}
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: StartTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got StartTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: QueryReceive
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got QueryReceive
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] No script found matching the message
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: no script found for the message
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Queyr>: sending exception
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: resopnse: Exception
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: StopTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got StopTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] Main loop terminated.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestFromClient.test_query_send <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] KB_QueryFactory starting on 60187
+2014-10-29 15:36:13+0800 [-] Starting factory <knowledge_base.controller.KB_QueryFactory instance at 0x0295D968>
+2014-10-29 15:36:13+0800 [knowledge_base.controller.KB_QueryFactory] <KB factory>: Building protocol, address=IPv4Address(TCP, '127.0.0.1', 60188)...
+2014-10-29 15:36:13+0800 [-] (TCP Port 60187 Closed)
+2014-10-29 15:36:13+0800 [-] Stopping factory <knowledge_base.controller.KB_QueryFactory instance at 0x0295D968>
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: received data:    +{"command": "StartTest", "request_id": "1"}   ×{"message": {"interface": "Iu-PS-Control", "layer3": {"message": "Attach Request", "protocol": "NAS", "parameters": {"imsi": "460001234567890"}}, "direction": "RNC->SGSN"}, "command": "QuerySend", "request_id": "1"}   *{"command": "StopTest", "request_id": "1"}
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: StartTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got StartTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: QuerySend
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got QuerySend
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] Script found, module=send_attach_request, path=..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] creating context, type=user_context, paras={'imsi': u'460001234567890'}.
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index and context...
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] context key not exist
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] value of the key in the context: None
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] context key not exist
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] value of the key in the context: None
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] value of the key in the context: (u'460001234567890',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] value of the key in the context: (9,)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] context created.
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 9, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index and context...
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] value of the key in the context: (10,)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] context created.
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] creating context, type=sccp_context, paras={'nas_ctxt_id': 10, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index and context...
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] value of the key in the context: (11,)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] context created.
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: resopnse: AnswerSend
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: StopTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got StopTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] destroying context: {'context_id': 9, 'imsi': u'460001234567890'}
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] context destroyed.
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] destroying context: {'context_id': 10, 'user_ctxt_id': 9, 'ti': '0'}
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] context destroyed.
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] destroying context: {'context_id': 11, 'nas_ctxt_id': 10, 'sccp_id': '0'}
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] context destroyed.
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] Main loop terminated.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestFromClient.test_query_send_execute_error <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] KB_QueryFactory starting on 60189
+2014-10-29 15:36:13+0800 [-] Starting factory <knowledge_base.controller.KB_QueryFactory instance at 0x02943620>
+2014-10-29 15:36:13+0800 [-] (TCP Port 60189 Closed)
+2014-10-29 15:36:13+0800 [-] Stopping factory <knowledge_base.controller.KB_QueryFactory instance at 0x02943620>
+2014-10-29 15:36:13+0800 [-] Main loop terminated.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestFromClient.test_query_send_no_script <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] KB_QueryFactory starting on 60191
+2014-10-29 15:36:13+0800 [-] Starting factory <knowledge_base.controller.KB_QueryFactory instance at 0x0294B030>
+2014-10-29 15:36:13+0800 [knowledge_base.controller.KB_QueryFactory] <KB factory>: Building protocol, address=IPv4Address(TCP, '127.0.0.1', 60192)...
+2014-10-29 15:36:13+0800 [-] (TCP Port 60191 Closed)
+2014-10-29 15:36:13+0800 [-] Stopping factory <knowledge_base.controller.KB_QueryFactory instance at 0x0294B030>
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: received data:    +{"command": "StartTest", "request_id": "1"}   Ü{"message": {"interface": "Iu-PS-Control", "layer3": {"message": "Attach Request fake", "protocol": "NAS", "parameters": {"imsi": "460001234567890"}}, "direction": "RNC->SGSN"}, "command": "QuerySend", "request_id": "1"}   *{"command": "StopTest", "request_id": "1"}
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: StartTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got StartTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: QuerySend
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got QuerySend
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] No script found matching the message
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: no script found for the message
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Queyr>: sending back the original message
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: resopnse: AnswerSend
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: StopTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got StopTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] Main loop terminated.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestFromClient.test_start_test <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] KB_QueryFactory starting on 60193
+2014-10-29 15:36:13+0800 [-] Starting factory <knowledge_base.controller.KB_QueryFactory instance at 0x0294BE90>
+2014-10-29 15:36:13+0800 [knowledge_base.controller.KB_QueryFactory] <KB factory>: Building protocol, address=IPv4Address(TCP, '127.0.0.1', 60194)...
+2014-10-29 15:36:13+0800 [-] (TCP Port 60193 Closed)
+2014-10-29 15:36:13+0800 [-] Stopping factory <knowledge_base.controller.KB_QueryFactory instance at 0x0294BE90>
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: received data:    +{"command": "StartTest", "request_id": "1"}
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: StartTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got StartTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] Main loop terminated.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestFromClient.test_stop_test <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] KB_QueryFactory starting on 60195
+2014-10-29 15:36:13+0800 [-] Starting factory <knowledge_base.controller.KB_QueryFactory instance at 0x029517D8>
+2014-10-29 15:36:13+0800 [knowledge_base.controller.KB_QueryFactory] <KB factory>: Building protocol, address=IPv4Address(TCP, '127.0.0.1', 60196)...
+2014-10-29 15:36:13+0800 [-] (TCP Port 60195 Closed)
+2014-10-29 15:36:13+0800 [-] Stopping factory <knowledge_base.controller.KB_QueryFactory instance at 0x029517D8>
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: received data:    +{"command": "StartTest", "request_id": "1"}   *{"command": "StopTest", "request_id": "1"}
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: StartTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got StartTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: got a request: StopTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <Query>: got StopTest
+2014-10-29 15:36:13+0800 [KB_QueryProtocol,0,127.0.0.1] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] Main loop terminated.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestFromClient.test_unknown_command <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] KB_QueryFactory starting on 60197
+2014-10-29 15:36:13+0800 [-] Starting factory <knowledge_base.controller.KB_QueryFactory instance at 0x02828350>
+2014-10-29 15:36:13+0800 [-] (TCP Port 60197 Closed)
+2014-10-29 15:36:13+0800 [-] Stopping factory <knowledge_base.controller.KB_QueryFactory instance at 0x02828350>
+2014-10-29 15:36:13+0800 [-] Main loop terminated.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestProtocol.test_query_receive <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] <KB factory>: Building protocol, address=('127.0.0.1', 0)...
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: received data:    ×{"message": {"interface": "Iu-PS-Control", "layer3": {"message": "Attach Request", "protocol": "NAS", "parameters": {"imsi": "460001234567890"}}, "direction": "RNC->SGSN"}, "command": "QuerySend", "request_id": "1"}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: got a request: QuerySend
+2014-10-29 15:36:13+0800 [-] <Query>: got QuerySend
+2014-10-29 15:36:13+0800 [-] Script found, module=send_attach_request, path=..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': u'460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (u'460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (12,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 12, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (13,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 13, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (14,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: resopnse: AnswerSend
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: received data:   ‡{"message": {"interface": "Iu-PS-Control", "layer2": {"message": "Data Transfer", "protocol": "RANAP", "parameters": {}}, "direction": "RNC<-SGSN", "layer3": {"message": "Authentication Request", "protocol": "NAS", "parameters": {"a": "1", "b": "2"}}, "layer1": {"message": "DataIndication", "protocol": "SCCP", "parameters": {"sccp_id": "0"}}}, "command": "QueryReceive", "request_id": "1"}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: got a request: QueryReceive
+2014-10-29 15:36:13+0800 [-] <Query>: got QueryReceive
+2014-10-29 15:36:13+0800 [-] Script found, module=response_to_authentication_request, path=..\knowledge_base\test\scripts\demo_auth_req.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_auth_req.py
+2014-10-29 15:36:13+0800 [-] finding context, type=sccp_context, paras=(('sccp_id', u'0'),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 14, 'nas_ctxt_id': 13, 'sccp_id': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=nas_transaction_context, paras=(('context_id', 13),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 13, 'user_ctxt_id': 12, 'ti': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context, paras=(('context_id', 12),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 12, 'imsi': u'460001234567890'}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: resopnse: AnswerReceive
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestProtocol.test_query_receive_execute_error <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] <KB factory>: Building protocol, address=('127.0.0.1', 0)...
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: received data:    Ü{"message": {"interface": "ErrorInterface", "layer3": {"message": "Error Request", "protocol": "Error", "parameters": {"imsi": "460001234567890"}}, "direction": "Error-dir"}, "command": "QueryReceive", "request_id": "1"}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: got a request: QueryReceive
+2014-10-29 15:36:13+0800 [-] <Query>: got QueryReceive
+2014-10-29 15:36:13+0800 [-] Script found, module=error, path=..\knowledge_base\test\scripts\demo_error.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_error.py
+2014-10-29 15:36:13+0800 [-] <Query>: script execution error
+2014-10-29 15:36:13+0800 [-] <Query>: Traceback (most recent call last):
+	  File "D:\work\Projects\EPC_Test\knowledge_base\controller.py", line 98, in on_query_receive
+	    rsp_msg = s.run(msg, self.context_manager)
+	  File "D:\work\Projects\EPC_Test\knowledge_base\script.py", line 233, in run
+	    result = mdl.run(msg, ctxt_mngr)
+	  File "..\knowledge_base\test\scripts\demo_error.py", line 2, in run
+	    raise Exception('Error in script')
+	Exception: Error in script
+	
+2014-10-29 15:36:13+0800 [-] <Queyr>: sending exception
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: resopnse: Exception
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestProtocol.test_query_receive_no_script <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] <KB factory>: Building protocol, address=('127.0.0.1', 0)...
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: received data:    ß{"message": {"interface": "Iu-PS-Control", "layer3": {"message": "Attach Request fake", "protocol": "NAS", "parameters": {"imsi": "460001234567890"}}, "direction": "RNC->SGSN"}, "command": "QueryReceive", "request_id": "1"}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: got a request: QueryReceive
+2014-10-29 15:36:13+0800 [-] <Query>: got QueryReceive
+2014-10-29 15:36:13+0800 [-] No script found matching the message
+2014-10-29 15:36:13+0800 [-] <Query>: no script found for the message
+2014-10-29 15:36:13+0800 [-] <Queyr>: sending exception
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: resopnse: Exception
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestProtocol.test_query_send <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] <KB factory>: Building protocol, address=('127.0.0.1', 0)...
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: received data:    ×{"message": {"interface": "Iu-PS-Control", "layer3": {"message": "Attach Request", "protocol": "NAS", "parameters": {"imsi": "460001234567890"}}, "direction": "RNC->SGSN"}, "command": "QuerySend", "request_id": "1"}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: got a request: QuerySend
+2014-10-29 15:36:13+0800 [-] <Query>: got QuerySend
+2014-10-29 15:36:13+0800 [-] Script found, module=send_attach_request, path=..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': u'460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (u'460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (15,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 15, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (16,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 16, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (17,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: resopnse: AnswerSend
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestProtocol.test_query_send_execute_error <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] <KB factory>: Building protocol, address=('127.0.0.1', 0)...
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: received data:    Ù{"message": {"interface": "ErrorInterface", "layer3": {"message": "Error Request", "protocol": "Error", "parameters": {"imsi": "460001234567890"}}, "direction": "Error-dir"}, "command": "QuerySend", "request_id": "1"}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: got a request: QuerySend
+2014-10-29 15:36:13+0800 [-] <Query>: got QuerySend
+2014-10-29 15:36:13+0800 [-] Script found, module=error, path=..\knowledge_base\test\scripts\demo_error.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_error.py
+2014-10-29 15:36:13+0800 [-] <Query>: script execution error
+2014-10-29 15:36:13+0800 [-] <Query>: Traceback (most recent call last):
+	  File "D:\work\Projects\EPC_Test\knowledge_base\controller.py", line 60, in on_query_send
+	    rsp_msg = s.run(msg, self.context_manager)
+	  File "D:\work\Projects\EPC_Test\knowledge_base\script.py", line 233, in run
+	    result = mdl.run(msg, ctxt_mngr)
+	  File "..\knowledge_base\test\scripts\demo_error.py", line 2, in run
+	    raise Exception('Error in script')
+	Exception: Error in script
+	
+2014-10-29 15:36:13+0800 [-] <Queyr>: sending exception
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: resopnse: Exception
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestProtocol.test_query_send_no_script <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] <KB factory>: Building protocol, address=('127.0.0.1', 0)...
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: received data:    Ü{"message": {"interface": "Iu-PS-Control", "layer3": {"message": "Attach Request fake", "protocol": "NAS", "parameters": {"imsi": "460001234567890"}}, "direction": "RNC->SGSN"}, "command": "QuerySend", "request_id": "1"}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: got a request: QuerySend
+2014-10-29 15:36:13+0800 [-] <Query>: got QuerySend
+2014-10-29 15:36:13+0800 [-] No script found matching the message
+2014-10-29 15:36:13+0800 [-] <Query>: no script found for the message
+2014-10-29 15:36:13+0800 [-] <Queyr>: sending back the original message
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: resopnse: AnswerSend
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestProtocol.test_start_test <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] <KB factory>: Building protocol, address=('127.0.0.1', 0)...
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: received data:    +{"command": "StartTest", "request_id": "1"}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: got a request: StartTest
+2014-10-29 15:36:13+0800 [-] <Query>: got StartTest
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestProtocol.test_stop_test <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] <KB factory>: Building protocol, address=('127.0.0.1', 0)...
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: received data:    *{"command": "StopTest", "request_id": "1"}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: got a request: StopTest
+2014-10-29 15:36:13+0800 [-] <Query>: got StopTest
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestProtocol.test_unknown_command <--
+2014-10-29 15:36:13+0800 [-] <KB factory>: KB_QueryFactory created.
+2014-10-29 15:36:13+0800 [-] <KB factory>: Building protocol, address=('127.0.0.1', 0)...
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: received data:    ){"command": "unknown", "request_id": "1"}
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: found 1 query request
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: got a request: unknown
+2014-10-29 15:36:13+0800 [-] <Query>: got unknown
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: resopnse: Exception
+2014-10-29 15:36:13+0800 [-] <KB_Protocol>: not enough data to decode, length not received
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestQuery.test_on_query_receive <--
+2014-10-29 15:36:13+0800 [-] <Query>: got QuerySend
+2014-10-29 15:36:13+0800 [-] Script found, module=send_attach_request, path=..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (18,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 18, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (19,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 19, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (20,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] {'message': {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}}, 'command': 'AnswerSend', 'request_id': '1'}
+2014-10-29 15:36:13+0800 [-] <Query>: got QueryReceive
+2014-10-29 15:36:13+0800 [-] Script found, module=response_to_authentication_request, path=..\knowledge_base\test\scripts\demo_auth_req.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_auth_req.py
+2014-10-29 15:36:13+0800 [-] finding context, type=sccp_context, paras=(('sccp_id', '0'),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 20, 'nas_ctxt_id': 19, 'sccp_id': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=nas_transaction_context, paras=(('context_id', 19),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 19, 'user_ctxt_id': 18, 'ti': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context, paras=(('context_id', 18),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 18, 'imsi': '460001234567890'}
+2014-10-29 15:36:13+0800 [-] {'message': [{'interface': 'Iu-PS-Control', 'layer2': {'message': 'Data Transfer', 'protocol': 'RANAP', 'parameters': {}}, 'direction': 'RNC->SGSN', 'layer3': {'message': 'Authentication Response', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'layer1': {'message': 'DataIndication', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}}], 'command': 'AnswerReceive', 'request_id': '1'}
+2014-10-29 15:36:13+0800 [-] {'message': [{'interface': 'Iu-PS-Control', 'layer2': {'message': 'Data Transfer', 'protocol': 'RANAP', 'parameters': {}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'DataIndication', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer3': {'message': 'Authentication Response', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}}], 'command': 'AnswerReceive', 'request_id': '1'}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestQuery.test_on_query_send <--
+2014-10-29 15:36:13+0800 [-] <Query>: got QuerySend
+2014-10-29 15:36:13+0800 [-] Script found, module=send_attach_request, path=..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (21,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 21, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (22,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 22, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (23,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] {'message': {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}}, 'command': 'AnswerSend', 'request_id': '1'}
+2014-10-29 15:36:13+0800 [-] {'message': {'interface': 'Iu-PS-Control', 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}, 'direction': 'RNC->SGSN', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}}, 'command': 'AnswerSend', 'request_id': '1'}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestQuery.test_on_start_test <--
+2014-10-29 15:36:13+0800 [-] <Query>: got StartTest
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestQuery.test_on_stop_test <--
+2014-10-29 15:36:13+0800 [-] <Query>: got StopTest
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestQuery.test_receive_script_cannot_be_found <--
+2014-10-29 15:36:13+0800 [-] <Query>: got QueryReceive
+2014-10-29 15:36:13+0800 [-] No script found matching the message
+2014-10-29 15:36:13+0800 [-] <Query>: no script found for the message
+2014-10-29 15:36:13+0800 [-] <Queyr>: sending exception
+2014-10-29 15:36:13+0800 [-] {'reason': 'Cannot find script', 'command': 'Exception', 'request_id': '1'}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestQuery.test_receive_script_execute_error <--
+2014-10-29 15:36:13+0800 [-] <Query>: got QueryReceive
+2014-10-29 15:36:13+0800 [-] Script found, module=error, path=..\knowledge_base\test\scripts\demo_error.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_error.py
+2014-10-29 15:36:13+0800 [-] <Query>: script execution error
+2014-10-29 15:36:13+0800 [-] <Query>: Traceback (most recent call last):
+	  File "D:\work\Projects\EPC_Test\knowledge_base\controller.py", line 98, in on_query_receive
+	    rsp_msg = s.run(msg, self.context_manager)
+	  File "D:\work\Projects\EPC_Test\knowledge_base\script.py", line 233, in run
+	    result = mdl.run(msg, ctxt_mngr)
+	  File "..\knowledge_base\test\scripts\demo_error.py", line 2, in run
+	    raise Exception('Error in script')
+	Exception: Error in script
+	
+2014-10-29 15:36:13+0800 [-] <Queyr>: sending exception
+2014-10-29 15:36:13+0800 [-] {'reason': 'Traceback (most recent call last):\n  File "D:\\work\\Projects\\EPC_Test\\knowledge_base\\controller.py", line 98, in on_query_receive\n    rsp_msg = s.run(msg, self.context_manager)\n  File "D:\\work\\Projects\\EPC_Test\\knowledge_base\\script.py", line 233, in run\n    result = mdl.run(msg, ctxt_mngr)\n  File "..\\knowledge_base\\test\\scripts\\demo_error.py", line 2, in run\n    raise Exception(\'Error in script\')\nException: Error in script\n', 'command': 'Exception', 'request_id': '1'}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestQuery.test_send_script_cannot_be_found <--
+2014-10-29 15:36:13+0800 [-] <Query>: got QuerySend
+2014-10-29 15:36:13+0800 [-] No script found matching the message
+2014-10-29 15:36:13+0800 [-] <Query>: no script found for the message
+2014-10-29 15:36:13+0800 [-] <Queyr>: sending back the original message
+2014-10-29 15:36:13+0800 [-] {'message': {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request fake', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890'}}, 'direction': 'RNC->SGSN'}, 'command': 'AnswerSend', 'request_id': '1'}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestQuery.test_send_script_execute_error <--
+2014-10-29 15:36:13+0800 [-] <Query>: got QuerySend
+2014-10-29 15:36:13+0800 [-] Script found, module=error, path=..\knowledge_base\test\scripts\demo_error.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_error.py
+2014-10-29 15:36:13+0800 [-] <Query>: script execution error
+2014-10-29 15:36:13+0800 [-] <Query>: Traceback (most recent call last):
+	  File "D:\work\Projects\EPC_Test\knowledge_base\controller.py", line 60, in on_query_send
+	    rsp_msg = s.run(msg, self.context_manager)
+	  File "D:\work\Projects\EPC_Test\knowledge_base\script.py", line 233, in run
+	    result = mdl.run(msg, ctxt_mngr)
+	  File "..\knowledge_base\test\scripts\demo_error.py", line 2, in run
+	    raise Exception('Error in script')
+	Exception: Error in script
+	
+2014-10-29 15:36:13+0800 [-] <Queyr>: sending exception
+2014-10-29 15:36:13+0800 [-] {'reason': 'Traceback (most recent call last):\n  File "D:\\work\\Projects\\EPC_Test\\knowledge_base\\controller.py", line 60, in on_query_send\n    rsp_msg = s.run(msg, self.context_manager)\n  File "D:\\work\\Projects\\EPC_Test\\knowledge_base\\script.py", line 233, in run\n    result = mdl.run(msg, ctxt_mngr)\n  File "..\\knowledge_base\\test\\scripts\\demo_error.py", line 2, in run\n    raise Exception(\'Error in script\')\nException: Error in script\n', 'command': 'Exception', 'request_id': '1'}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_controller.TestQuery.test_unknown_command <--
+2014-10-29 15:36:13+0800 [-] <Query>: got unknown
+2014-10-29 15:36:13+0800 [-] {'reason': 'unknown command: unknown', 'command': 'Exception', 'request_id': '1'}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContext.test_add_field <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContext.test_mod_field <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContextManager.test_clear_test <--
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'a': 1, 'c': 3, 'b': 2}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2, 3)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (6, 7)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4, 5)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('x', 'y')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'y': 2, 'x': 1}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting context into index ('x', 'y')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[{'a': 1, 'context_id': 24, 'c': 3, 'b': 2}, {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 25, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}, {'y': 2, 'x': 1, 'context_id': 26}]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 25, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={(1, 2): {'y': 2, 'x': 1, 'context_id': 26}, (6, 7): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 25, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 25, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}, (1, 2, 3): {'a': 1, 'context_id': 24, 'c': 3, 'b': 2}})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] cliearing...
+2014-10-29 15:36:13+0800 [-] destroying context: {'a': 1, 'context_id': 24, 'c': 3, 'b': 2}
+2014-10-29 15:36:13+0800 [-] context destroyed.
+2014-10-29 15:36:13+0800 [-] destroying context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 25, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] context destroyed.
+2014-10-29 15:36:13+0800 [-] destroying context: {'y': 2, 'x': 1, 'context_id': 26}
+2014-10-29 15:36:13+0800 [-] context destroyed.
+2014-10-29 15:36:13+0800 [-] After clear
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('a', 1), ('b', 2), ('c', 3))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('p1', 1), ('p2', 2))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('x', 1), ('y', 2))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContextManager.test_create_context <--
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'm': 8, 'n': 9, 'b': 4}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4, 5)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=bearer_context_1, paras={'b1': 1}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] no matching keys found.
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[{'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'x': 6, 'y': 7, 'context_id': 27, 'b': 4, 'm': 8, 'n': 9}, {'context_id': 28, 'b1': 1, 'b2': 2, 'b3': 3}]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'x': 6, 'y': 7, 'context_id': 27, 'b': 4, 'm': 8, 'n': 9}})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={(6, 7): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'x': 6, 'y': 7, 'context_id': 27, 'b': 4, 'm': 8, 'n': 9}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'x': 6, 'y': 7, 'context_id': 27, 'b': 4, 'm': 8, 'n': 9}})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] cannot find context by given keys.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContextManager.test_destroy_context <--
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'a': 1, 'c': 3, 'b': 2}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2, 3)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (6, 7)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4, 5)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('x', 'y')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[{'a': 1, 'context_id': 29, 'c': 3, 'b': 2}, {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 30, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 30, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={(6, 7): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 30, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 30, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}, (1, 2, 3): {'a': 1, 'context_id': 29, 'c': 3, 'b': 2}})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=()
+2014-10-29 15:36:13+0800 [-] found context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 30, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] destroying context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 30, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] context destroyed.
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[{'a': 1, 'context_id': 29, 'c': 3, 'b': 2}]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={(1, 2, 3): {'a': 1, 'context_id': 29, 'c': 3, 'b': 2}})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('p1', 1), ('p2', 2))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('a', 3), ('b', 4), ('c', 5))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('x', 6), ('y', 7))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=()
+2014-10-29 15:36:13+0800 [-] found context: {'a': 1, 'context_id': 29, 'c': 3, 'b': 2}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContextManager.test_get_context <--
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (6, 7)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4, 5)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('x', 'y')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context_1, paras={'p2': 4, 'p1': 3}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x', 'y')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] ContextManager(
+		contexts=[{'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 31, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}, {'p2': 4, 'context_id': 32, 'p1': 3}]
+		indexes={'user_context': 
+	IndexList(
+		context_type=user_context
+		key=[('imei',), ('msisdn',), ('imsi',), ('context_id',)]
+		index={('imei',): 
+	Index(
+		context_type=user_context
+		key=('imei',)
+		index={})
+	, ('msisdn',): 
+	Index(
+		context_type=user_context
+		key=('msisdn',)
+		index={})
+	, ('imsi',): 
+	Index(
+		context_type=user_context
+		key=('imsi',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=user_context
+		key=('context_id',)
+		index={})
+	})
+	, 'bearer_context_1': 
+	IndexList(
+		context_type=bearer_context_1
+		key=[('b1', 'b2')]
+		index={('b1', 'b2'): 
+	Index(
+		context_type=bearer_context_1
+		key=('b1', 'b2')
+		index={})
+	})
+	, 'user_context_2': 
+	IndexList(
+		context_type=user_context_2
+		key=[('u1', 'u2')]
+		index={('u1', 'u2'): 
+	Index(
+		context_type=user_context_2
+		key=('u1', 'u2')
+		index={})
+	})
+	, 'user_context_1': 
+	IndexList(
+		context_type=user_context_1
+		key=[('x', 'y'), ('a', 'b', 'c'), ('p1', 'p2')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_context_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 31, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}, (3, 4): {'p2': 4, 'context_id': 32, 'p1': 3}})
+	, ('x', 'y'): 
+	Index(
+		context_type=user_context_1
+		key=('x', 'y')
+		index={(6, 7): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 31, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_context_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 31, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}})
+	})
+	, 'pdp_context_1': 
+	IndexList(
+		context_type=pdp_context_1
+		key=[('pdp1', 'pdp2')]
+		index={('pdp1', 'pdp2'): 
+	Index(
+		context_type=pdp_context_1
+		key=('pdp1', 'pdp2')
+		index={})
+	})
+	, 'nas_transaction_context': 
+	IndexList(
+		context_type=nas_transaction_context
+		key=[('ti',), ('context_id',)]
+		index={('ti',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('ti',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=nas_transaction_context
+		key=('context_id',)
+		index={})
+	})
+	, 'sccp_context': 
+	IndexList(
+		context_type=sccp_context
+		key=[('sccp_id',), ('context_id',)]
+		index={('sccp_id',): 
+	Index(
+		context_type=sccp_context
+		key=('sccp_id',)
+		index={})
+	, ('context_id',): 
+	Index(
+		context_type=sccp_context
+		key=('context_id',)
+		index={})
+	})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('p1', 1), ('p2', 2))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 31, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('a', 3), ('b', 4), ('c', 5))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 31, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('x', 6), ('y', 7))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'p2': 2, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 31, 'm': 8, 'n': 9, 'b': 4, 'y': 7, 'x': 6}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=(('m', 8), ('n', 9))
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] cannot find context by given keys.
+2014-10-29 15:36:13+0800 [-] found context: None
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context_1, paras=()
+2014-10-29 15:36:13+0800 [-] found context: {'p2': 4, 'context_id': 32, 'p1': 3}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestContextManager.test_load_index_of_context <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndex.test_delete_all_indexes <--
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'context_id': 0, 'p1': 1}, (3, 4): {'p2': 4, 'context_id': 2, 'p1': 3}, (2, 3): {'p2': 3, 'context_id': 1, 'p1': 2}})
+	
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={})
+	
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndex.test_get_context <--
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'context_id': 0, 'p1': 1}})
+	
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndex.test_insert_index <--
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 1, 'p2': 2, 'p1': 1, 'context_id': 0}})
+	
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 1, 'p2': 2, 'p1': 1, 'context_id': 0}})
+	
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 1, 'p2': 2, 'p1': 1, 'context_id': 0}})
+	
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndex.test_update_index <--
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'context_id': 0, 'p1': 1}})
+	
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(10, 2): {'p2': 2, 'context_id': 0, 'p1': 10}})
+	
+2014-10-29 15:36:13+0800 [-] 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(10, 2): {'p2': 2, 'context_id': 0, 'p1': 10}})
+	
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndexList.test_get_context <--
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'context_id': 0, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] cannot find context by given keys.
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndexList.test_insert_index <--
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (6,)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (3, 4, 5)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] inserting context into index ('x',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={(6,): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] no matching keys found.
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={(6,): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] cannot find context by given keys.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] context type mismatch.
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={(6,): {'a': 3, 'p2': 2, 'c': 5, 'b': 4, 'context_id': 0, 'x': 6, 'p1': 1}})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_context.TestIndexList.test_update_index <--
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (1, 2)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('x',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('a', 'b', 'c')
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting context into index ('p1', 'p2')
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 2): {'p2': 2, 'context_id': 0, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={})
+	})
+	
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 10): {'p2': 10, 'context_id': 0, 'p1': 1}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 10): {'p2': 10, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 0, 'b': 4}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 10, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 0, 'b': 4}})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] 
+	IndexList(
+		context_type=user_ctxt_1
+		key=[('p1', 'p2'), ('x',), ('a', 'b', 'c')]
+		index={('p1', 'p2'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('p1', 'p2')
+		index={(1, 10): {'p2': 10, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 0, 'b': 4, 'x': 6}})
+	, ('a', 'b', 'c'): 
+	Index(
+		context_type=user_ctxt_1
+		key=('a', 'b', 'c')
+		index={(3, 4, 5): {'p2': 10, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 0, 'b': 4, 'x': 6}})
+	, ('x',): 
+	Index(
+		context_type=user_ctxt_1
+		key=('x',)
+		index={(6,): {'p2': 10, 'a': 3, 'c': 5, 'p1': 1, 'context_id': 0, 'b': 4, 'x': 6}})
+	})
+	
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScripTree.test_find <--
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:1
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:2
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 4, 'b': 2}:4
+2014-10-29 15:36:13+0800 [-]  |-{'d': 2}:3
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 3}:6
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 3}:5
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScripTree.test_insert <--
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'d': 2}:
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'b': 2, 'd': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'d': 2}:
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'b': 2, 'd': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'d': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'c': 3, 'b': 3}:
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'b': 2, 'd': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'d': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 3}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 3}:
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScript.test_run_recv_script <--
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (33,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 33, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (34,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 34, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (35,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_auth_req.py
+2014-10-29 15:36:13+0800 [-] finding context, type=sccp_context, paras=(('sccp_id', '0'),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 35, 'nas_ctxt_id': 34, 'sccp_id': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=nas_transaction_context, paras=(('context_id', 34),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 34, 'user_ctxt_id': 33, 'ti': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context, paras=(('context_id', 33),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 33, 'imsi': '460001234567890'}
+2014-10-29 15:36:13+0800 [-] [{'interface': 'Iu-PS-Control', 'layer2': {'message': 'Data Transfer', 'protocol': 'RANAP', 'parameters': {}}, 'direction': 'RNC->SGSN', 'layer3': {'message': 'Authentication Response', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'layer1': {'message': 'DataIndication', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}}]
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScript.test_run_send_script <--
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (36,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 36, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (37,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 37, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (38,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptManager.test_find_recv_script <--
+2014-10-29 15:36:13+0800 [-] Script found, module=send_attach_request, path=..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] module "send_attach_request"@..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (39,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 39, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (40,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 40, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (41,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}}
+2014-10-29 15:36:13+0800 [-] Script found, module=response_to_authentication_request_2, path=..\knowledge_base\test\scripts\demo_auth_req_2.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_auth_req_2.py
+2014-10-29 15:36:13+0800 [-] finding context, type=sccp_context, paras=(('sccp_id', '0'),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 41, 'nas_ctxt_id': 40, 'sccp_id': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=nas_transaction_context, paras=(('context_id', 40),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 40, 'user_ctxt_id': 39, 'ti': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context, paras=(('context_id', 39),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 39, 'imsi': '460001234567890'}
+2014-10-29 15:36:13+0800 [-] [{'interface': 'Iu-PS-Control', 'layer2': {'message': 'Data Transfer', 'protocol': 'RANAP', 'parameters': {}}, 'direction': 'RNC->SGSN', 'layer3': {'message': 'Authentication Response', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'layer1': {'message': 'DataIndication', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}}, {'interface': 'Iu-PS-Control', 'layer2': {'message': 'Data Transfer', 'protocol': 'RANAP', 'parameters': {}}, 'direction': 'RNC->SGSN', 'layer3': {'message': 'Authentication Response', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'layer1': {'message': 'DataIndication', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}}]
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptManager.test_find_send_script <--
+2014-10-29 15:36:13+0800 [-] Script found, module=send_attach_request, path=..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] module "send_attach_request"@..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (42,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 42, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (43,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 43, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (44,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] {(u'NAS', u'Iu-PS-Control', u'RNC->SGSN', u'Attach Request'): <knowledge_base.script.ScriptTree instance at 0x029F7D28>, (u'Error', u'ErrorInterface', u'Error-dir', u'Error Request'): <knowledge_base.script.ScriptTree instance at 0x029F7FA8>, (u'NAS', u'Iu-PS-Control', u'RNC<-SGSN', u'Authentication Request'): <knowledge_base.script.ScriptTree instance at 0x029F7D00>}
+2014-10-29 15:36:13+0800 [-] {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}}
+2014-10-29 15:36:13+0800 [-] Script found, module=send_attach_request_2, path=..\knowledge_base\test\scripts\demo_attach_req_2.py
+2014-10-29 15:36:13+0800 [-] module "send_attach_request_2"@..\knowledge_base\test\scripts\demo_attach_req_2.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req_2.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (45,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 45, 'ti': '10000'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('10000',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (46,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 46, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (47,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'a': '1', 'imsi': '460001234567890', 'ti': '10000'}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptManager.test_load_scripts <--
+2014-10-29 15:36:13+0800 [-] (u'NAS', u'Iu-PS-Control', u'RNC->SGSN', u'Attach Request')
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{}:send_attach_request
+2014-10-29 15:36:13+0800 [-]  | |-{u'Attach Request.a': u'1'}:send_attach_request_2
+2014-10-29 15:36:13+0800 [-] (u'Error', u'ErrorInterface', u'Error-dir', u'Error Request')
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{}:error
+2014-10-29 15:36:13+0800 [-] (u'NAS', u'Iu-PS-Control', u'RNC<-SGSN', u'Authentication Request')
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{u'Authentication Request.a': u'1', u'Authentication Request.b': u'2'}:response_to_authentication_request
+2014-10-29 15:36:13+0800 [-]  | |-{u'Authentication Request.a': u'1', u'Data Transfer.x': u'100', u'Authentication Request.c': u'3', u'Authentication Request.b': u'2'}:response_to_authentication_request_2
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptTreeNode.test_add_child <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptTreeNode.test_del_child <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptTreeNode.test_specific_than <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScripTree.test_find <--
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:1
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:2
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 4, 'b': 2}:4
+2014-10-29 15:36:13+0800 [-]  |-{'d': 2}:3
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 3}:6
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 3}:5
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScripTree.test_insert <--
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'d': 2}:
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'b': 2, 'd': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'d': 2}:
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'b': 2, 'd': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'d': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'c': 3, 'b': 3}:
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 2}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'b': 2, 'd': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'d': 2}:
+2014-10-29 15:36:13+0800 [-]  |-{'a': 1, 'b': 3}:
+2014-10-29 15:36:13+0800 [-]  | |-{'a': 1, 'c': 3, 'b': 3}:
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScript.test_run_recv_script <--
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (48,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 48, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (49,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 49, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (50,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_auth_req.py
+2014-10-29 15:36:13+0800 [-] finding context, type=sccp_context, paras=(('sccp_id', '0'),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 50, 'nas_ctxt_id': 49, 'sccp_id': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=nas_transaction_context, paras=(('context_id', 49),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 49, 'user_ctxt_id': 48, 'ti': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context, paras=(('context_id', 48),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 48, 'imsi': '460001234567890'}
+2014-10-29 15:36:13+0800 [-] [{'interface': 'Iu-PS-Control', 'layer2': {'message': 'Data Transfer', 'protocol': 'RANAP', 'parameters': {}}, 'direction': 'RNC->SGSN', 'layer3': {'message': 'Authentication Response', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'layer1': {'message': 'DataIndication', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}}]
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScript.test_run_send_script <--
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (51,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 51, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (52,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 52, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (53,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptManager.test_find_recv_script <--
+2014-10-29 15:36:13+0800 [-] Script found, module=send_attach_request, path=..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] module "send_attach_request"@..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (54,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 54, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (55,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 55, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (56,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}}
+2014-10-29 15:36:13+0800 [-] Script found, module=response_to_authentication_request_2, path=..\knowledge_base\test\scripts\demo_auth_req_2.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_auth_req_2.py
+2014-10-29 15:36:13+0800 [-] finding context, type=sccp_context, paras=(('sccp_id', '0'),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 56, 'nas_ctxt_id': 55, 'sccp_id': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=nas_transaction_context, paras=(('context_id', 55),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 55, 'user_ctxt_id': 54, 'ti': '0'}
+2014-10-29 15:36:13+0800 [-] finding context, type=user_context, paras=(('context_id', 54),)
+2014-10-29 15:36:13+0800 [-] finding context...
+2014-10-29 15:36:13+0800 [-] found context: {'context_id': 54, 'imsi': '460001234567890'}
+2014-10-29 15:36:13+0800 [-] [{'interface': 'Iu-PS-Control', 'layer2': {'message': 'Data Transfer', 'protocol': 'RANAP', 'parameters': {}}, 'direction': 'RNC->SGSN', 'layer3': {'message': 'Authentication Response', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'layer1': {'message': 'DataIndication', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}}, {'interface': 'Iu-PS-Control', 'layer2': {'message': 'Data Transfer', 'protocol': 'RANAP', 'parameters': {}}, 'direction': 'RNC->SGSN', 'layer3': {'message': 'Authentication Response', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'layer1': {'message': 'DataIndication', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}}]
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptManager.test_find_send_script <--
+2014-10-29 15:36:13+0800 [-] Script found, module=send_attach_request, path=..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] module "send_attach_request"@..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (57,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 57, 'ti': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (58,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 58, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (59,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] {(u'NAS', u'Iu-PS-Control', u'RNC->SGSN', u'Attach Request'): <knowledge_base.script.ScriptTree instance at 0x02A03120>, (u'Error', u'ErrorInterface', u'Error-dir', u'Error Request'): <knowledge_base.script.ScriptTree instance at 0x02A0EB70>, (u'NAS', u'Iu-PS-Control', u'RNC<-SGSN', u'Authentication Request'): <knowledge_base.script.ScriptTree instance at 0x02A03058>}
+2014-10-29 15:36:13+0800 [-] {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'imsi': '460001234567890', 'ti': '0'}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}}
+2014-10-29 15:36:13+0800 [-] Script found, module=send_attach_request_2, path=..\knowledge_base\test\scripts\demo_attach_req_2.py
+2014-10-29 15:36:13+0800 [-] module "send_attach_request_2"@..\knowledge_base\test\scripts\demo_attach_req_2.py
+2014-10-29 15:36:13+0800 [-] ..\knowledge_base\test\scripts\demo_attach_req_2.py
+2014-10-29 15:36:13+0800 [-] creating context, type=user_context, paras={'imsi': '460001234567890'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imei',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('msisdn',)
+2014-10-29 15:36:13+0800 [-] context key not exist
+2014-10-29 15:36:13+0800 [-] value of the key in the context: None
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('imsi',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('460001234567890',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (60,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('imsi',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=nas_transaction_context, paras={'user_ctxt_id': 60, 'ti': '10000'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('ti',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('10000',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (61,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('ti',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] creating context, type=sccp_context, paras={'nas_ctxt_id': 61, 'sccp_id': '0'}.
+2014-10-29 15:36:13+0800 [-] inserting index and context...
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: ('0',)
+2014-10-29 15:36:13+0800 [-] inserting index to context: ('context_id',)
+2014-10-29 15:36:13+0800 [-] value of the key in the context: (62,)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('sccp_id',)
+2014-10-29 15:36:13+0800 [-] inserting context into index ('context_id',)
+2014-10-29 15:36:13+0800 [-] context created.
+2014-10-29 15:36:13+0800 [-] {'interface': 'Iu-PS-Control', 'layer3': {'message': 'Attach Request', 'protocol': 'NAS', 'parameters': {'a': '1', 'imsi': '460001234567890', 'ti': '10000'}}, 'direction': 'RNC->SGSN', 'layer1': {'message': 'Connection Request', 'protocol': 'SCCP', 'parameters': {'sccp_id': '0'}}, 'layer2': {'message': 'Initial UE', 'protocol': 'RANAP', 'parameters': {}}}
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptManager.test_load_scripts <--
+2014-10-29 15:36:13+0800 [-] (u'NAS', u'Iu-PS-Control', u'RNC->SGSN', u'Attach Request')
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{}:send_attach_request
+2014-10-29 15:36:13+0800 [-]  | |-{u'Attach Request.a': u'1'}:send_attach_request_2
+2014-10-29 15:36:13+0800 [-] (u'Error', u'ErrorInterface', u'Error-dir', u'Error Request')
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{}:error
+2014-10-29 15:36:13+0800 [-] (u'NAS', u'Iu-PS-Control', u'RNC<-SGSN', u'Authentication Request')
+2014-10-29 15:36:13+0800 [-] 
+	root
+2014-10-29 15:36:13+0800 [-]  |-{u'Authentication Request.a': u'1', u'Authentication Request.b': u'2'}:response_to_authentication_request
+2014-10-29 15:36:13+0800 [-]  | |-{u'Authentication Request.a': u'1', u'Data Transfer.x': u'100', u'Authentication Request.c': u'3', u'Authentication Request.b': u'2'}:response_to_authentication_request_2
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptTreeNode.test_add_child <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptTreeNode.test_del_child <--
+2014-10-29 15:36:13+0800 [-] --> knowledge_base.test.test_script.TestScriptTreeNode.test_specific_than <--

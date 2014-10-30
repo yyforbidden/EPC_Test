@@ -1,0 +1,17 @@
+@startuml
+note over RF
+	send msg1 
+	on recieve: msg4
+	send: msg6, para p1 = 1
+	finish
+end note
+RF -> PSTT: Execute
+note over PSTT: 场景1: 首条消息发送
+PSTT -> DUT: send: msg1
+note over PSTT: 场景2: 通过知识库查询msg2响应消息为msg3
+DUT -> PSTT: recieve: msg2
+PSTT -> DUT: send: msg3
+note over PSTT: 场景3：通过支持库查询msg4的响应为msg5,但是被脚本覆盖为msg6
+DUT -> PSTT: recieve: msg4
+PSTT -> DUT: send msg6
+@enduml

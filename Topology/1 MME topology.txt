@@ -1,0 +1,6 @@
+node MME MME1
+node MME MME2
+node eNB eNB1
+node HSS HSS1
+node xGW GW1
+node OMM OMM1

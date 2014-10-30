@@ -1,0 +1,22 @@
+@startuml
+start
+:收到消息;
+:根据消息的协议、接口、方向、名称、收发找到特征树;
+
+while (true)
+	if (子节点中，有且仅有一个节点与消息匹配) then (yes)
+		:遍历匹配子节点对应的子树;
+	elseif (没有子节点与消息匹配) then (yes)
+		if (当前节点是根节点) then (no)
+			:使用当前节点对应的脚本;
+		else
+			:异常：没有匹配的规则;
+		endif
+		:break;
+	else
+		:异常：规则有歧义;
+		:break;
+	endif
+end while
+stop
+@enduml

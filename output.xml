@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140604 16:37:12.718" generator="Robot 2.8.3 (Python 2.6.3 on win32)">
+<suite source="E:\eclipse_prj\EPC_Service_Demo\testcases" id="s1" name="Testcases">
+<suite source="E:\eclipse_prj\EPC_Service_Demo\testcases\GW_as_DUT" id="s1-s1" name="GW as DUT">
+<suite source="E:\eclipse_prj\EPC_Service_Demo\testcases\GW_as_DUT\01_Location_Management.txt" id="s1-s1-s1" name="01 Location Management">
+<test id="s1-s1-s1-t1" name="01 Create Session and Delete Session">
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 GW topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.750" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.750" starttime="20140604 16:37:12.750"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.750" critical="yes" starttime="20140604 16:37:12.750">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140604 16:37:12.750" starttime="20140604 16:37:12.734"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140604 16:37:12.750" starttime="20140604 16:37:12.734"></status>
+</suite>
+<suite source="E:\eclipse_prj\EPC_Service_Demo\testcases\MME_as_DUT" id="s1-s2" name="MME as DUT">
+<suite source="E:\eclipse_prj\EPC_Service_Demo\testcases\MME_as_DUT\01_Attach.txt" id="s1-s2-s1" name="01 Attach">
+<test id="s1-s2-s1-t1" name="01 First Attach">
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.765" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.765" starttime="20140604 16:37:12.765"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.765" critical="yes" starttime="20140604 16:37:12.765">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s2-s1-t2" name="02 Attach Fail, AIR from HSS timeout">
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.765" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.765" starttime="20140604 16:37:12.765"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.765" critical="yes" starttime="20140604 16:37:12.765">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s2-s1-t3" name="03 Attach Fail, Sub Unknow in HSS">
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.765" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.765" starttime="20140604 16:37:12.765"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.765" critical="yes" starttime="20140604 16:37:12.765">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s2-s1-t4" name="04 Attach Fail, Authenticate UE No Response">
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.765" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.765" starttime="20140604 16:37:12.765"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.765" critical="yes" starttime="20140604 16:37:12.765">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s2-s1-t5" name="05 Attach Fail, UE auth NE fail">
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.765" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.765" starttime="20140604 16:37:12.765"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.765" critical="yes" starttime="20140604 16:37:12.765">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s2-s1-t6" name="99 First Attach With Parameters">
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.765" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.765" starttime="20140604 16:37:12.765"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.765" critical="yes" starttime="20140604 16:37:12.765">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140604 16:37:12.781" starttime="20140604 16:37:12.765"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140604 16:37:12.781" starttime="20140604 16:37:12.750"></status>
+</suite>
+<suite source="E:\eclipse_prj\EPC_Service_Demo\testcases\TestOfTestLib" id="s1-s3" name="TestOfTestLib">
+<suite source="E:\eclipse_prj\EPC_Service_Demo\testcases\TestOfTestLib\01_EMM, DUT is new_mme.txt" id="s1-s3-s1" name="01 EMM, DUT is new mme">
+<test id="s1-s3-s1-t1" name="01 Initial Attach Request">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.781" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.781" starttime="20140604 16:37:12.781"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.781" starttime="20140604 16:37:12.781"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.781" critical="yes" starttime="20140604 16:37:12.781">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t2" name="02 Attach Reject">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.781" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.781" starttime="20140604 16:37:12.781"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.781" starttime="20140604 16:37:12.781"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.781" critical="yes" starttime="20140604 16:37:12.781">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t3" name="03 Authentication From HSS Success">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.781" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.781" starttime="20140604 16:37:12.781"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.781" starttime="20140604 16:37:12.781"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.781" critical="yes" starttime="20140604 16:37:12.781">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t4" name="04 Authentication From HSS Timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.796" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.781"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.796" critical="yes" starttime="20140604 16:37:12.781">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t5" name="05 Authentication From HSS Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.796" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.796" critical="yes" starttime="20140604 16:37:12.796">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t6" name="06 Authenticate UE Success">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.796" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.796" critical="yes" starttime="20140604 16:37:12.796">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t7" name="06 Authenticate UE Timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.796" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.796" critical="yes" starttime="20140604 16:37:12.796">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t8" name="07 Authenticate UE Fail - UE Auth CN Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.796" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.796" critical="yes" starttime="20140604 16:37:12.796">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t9" name="08 Authenticate UE Fail - CN Auth UE Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.796" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.796" critical="yes" starttime="20140604 16:37:12.796">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t10" name="09 Get UE Identity From Old MME Success">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.796" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.796" starttime="20140604 16:37:12.796"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.796" critical="yes" starttime="20140604 16:37:12.796">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t11" name="10 Get UE Identity From UE, Old MME Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.812" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.796"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.796"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.812" critical="yes" starttime="20140604 16:37:12.796">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t12" name="11 Get UE Identity From UE, Old MME Timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.812" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.812" critical="yes" starttime="20140604 16:37:12.812">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t13" name="12 Get UE Identity From UE Timeout, Old MME Timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.812" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.812" critical="yes" starttime="20140604 16:37:12.812">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t14" name="13 Get UE Identity From UE Timeout, Old MME Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.812" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.812" critical="yes" starttime="20140604 16:37:12.812">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t15" name="14 Get UE Identity From UE Fail, Old MME Timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.812" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.812" critical="yes" starttime="20140604 16:37:12.812">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t16" name="15 Get UE Identity From UE Fail, Old MME Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.812" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.812" critical="yes" starttime="20140604 16:37:12.812">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t17" name="16 Delete Old Session, Success">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.812" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.812" starttime="20140604 16:37:12.812"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.812" critical="yes" starttime="20140604 16:37:12.812">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t18" name="17 Delete Old Session, Fail, PCRF timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.828" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.828" critical="yes" starttime="20140604 16:37:12.828">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t19" name="18 Delete Old Session, Fail, PCRF Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.828" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.828" critical="yes" starttime="20140604 16:37:12.828">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t20" name="19 Delete Old Session, Fail, PGW timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.828" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.828" critical="yes" starttime="20140604 16:37:12.828">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t21" name="20 Delete Old Session, Fail, PGW Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.828" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.828" critical="yes" starttime="20140604 16:37:12.828">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t22" name="21 Delete Old Session, Fail, SGW timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.828" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.828" critical="yes" starttime="20140604 16:37:12.828">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t23" name="22 Delete Old Session, Fail, SGW Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.828" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.828" critical="yes" starttime="20140604 16:37:12.828">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t24" name="23 Update Location Success">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.828" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.828" starttime="20140604 16:37:12.828"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.828" critical="yes" starttime="20140604 16:37:12.828">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t25" name="26 Update Location Fail, old mme fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.843" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.843" critical="yes" starttime="20140604 16:37:12.843">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t26" name="27 Update Location Fail, old mme timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.843" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.843" critical="yes" starttime="20140604 16:37:12.843">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t27" name="28 Update Location Fail, old hss fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.843" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.843" critical="yes" starttime="20140604 16:37:12.843">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t28" name="29 Update Location Fail, old hss timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.843" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.843" critical="yes" starttime="20140604 16:37:12.843">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t29" name="30 Create Session, Success">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.843" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.843" critical="yes" starttime="20140604 16:37:12.843">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t30" name="31 Create Session, Fail, PCRF timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.843" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.843" starttime="20140604 16:37:12.843"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.843" critical="yes" starttime="20140604 16:37:12.843">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t31" name="32 Create Session, Fail, PCRF Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.859" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.859"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.843"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.859" critical="yes" starttime="20140604 16:37:12.843">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t32" name="33 Create Session, Fail, PGW timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.859" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.859"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.859"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.859" critical="yes" starttime="20140604 16:37:12.859">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t33" name="34 Create Session, Fail, PGW Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.859" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.859"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.859"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.859" critical="yes" starttime="20140604 16:37:12.859">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t34" name="35 Create Session, Fail, SGW timeout">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.859" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.859"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.859"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.859" critical="yes" starttime="20140604 16:37:12.859">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<test id="s1-s3-s1-t35" name="36 Create Session, Fail, SGW Fail">
+<kw type="setup" name="Prepare EMM Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${topology} = epctest.Load Topology">
+<doc></doc>
+<arguments>
+<arg>../Topology/1 MME topology.txt</arg>
+</arguments>
+<msg timestamp="20140604 16:37:12.859" level="FAIL">Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</msg>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.859"></status>
+</kw>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.859"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140604 16:37:12.859" critical="yes" starttime="20140604 16:37:12.859">Setup failed:
+Keyword 'epctest.Load Topology' expected 0 non-keyword arguments, got 1.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.781"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140604 16:37:12.859" starttime="20140604 16:37:12.781"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140604 16:37:12.875" starttime="20140604 16:37:12.718"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="42" pass="0">Critical Tests</stat>
+<stat fail="42" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="42" pass="0" id="s1" name="Testcases">Testcases</stat>
+<stat fail="1" pass="0" id="s1-s1" name="GW as DUT">Testcases.GW as DUT</stat>
+<stat fail="1" pass="0" id="s1-s1-s1" name="01 Location Management">Testcases.GW as DUT.01 Location Management</stat>
+<stat fail="6" pass="0" id="s1-s2" name="MME as DUT">Testcases.MME as DUT</stat>
+<stat fail="6" pass="0" id="s1-s2-s1" name="01 Attach">Testcases.MME as DUT.01 Attach</stat>
+<stat fail="35" pass="0" id="s1-s3" name="TestOfTestLib">Testcases.TestOfTestLib</stat>
+<stat fail="35" pass="0" id="s1-s3-s1" name="01 EMM, DUT is new mme">Testcases.TestOfTestLib.01 EMM, DUT is new mme</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20140604 16:37:12.750" level="ERROR">Error in file 'E:\eclipse_prj\EPC_Service_Demo\testcases\GW_as_DUT\01_Location_Management.txt': Test Library 'MessageSequence' expected 1 to 2 arguments, got 0.</msg>
+<msg timestamp="20140604 16:37:12.765" level="ERROR">Error in file 'E:\eclipse_prj\EPC_Service_Demo\testcases\MME_as_DUT\01_Attach.txt': Test Library 'MessageSequence' expected 1 to 2 arguments, got 0.</msg>
+</errors>
+</robot>

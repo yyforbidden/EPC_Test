@@ -1,0 +1,8 @@
+MME:mme1
+MME:mme2
+GW:xgw1
+GW:xgw2
+
+mme1--xgw1
+mme1--mmme2
+mme2--xgw2

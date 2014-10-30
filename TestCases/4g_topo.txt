@@ -1,0 +1,10 @@
+@enb1
+@mme1
+@xgw1
+@pcrf1
+@ocs1
+
+@enb1--@xgw1
+@mme1--@xgw1
+@xgw1--@pcrf1
+@xgw1--@ocs1

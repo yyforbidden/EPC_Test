@@ -1,0 +1,36 @@
+*** Settings ***
+Library           ../EPCTest/epctest.py
+
+*** Test Cases ***
+Create & Delete Session
+    [Setup]    Initialize Environment
+    Send    Create Session Request    enb1    xgw1
+    On Recieve    Modify Bearer Response    xgw1    enb1
+    Wait    enb1--xgw1    5000
+    Send    Delete Session Request    enb1    xgw1
+    On Recieve    Delete Session Response    xgw1    enb1
+    Finish    enb1--xgw1
+    Execute
+
+Create & Delete Session - using keyword
+    [Setup]    Initialize Environment
+    Create Session    enb1    xgw1
+    Wait    enb1--xgw1    5
+    Delete Session    enb1    xgw1
+    Finish    enb1--xgw1
+    Execute
+
+*** Keywords ***
+Initialize Environment
+    Load Topology    4g_topo.txt
+    Assign    enb1    xgw1    pstt-yw-enb1-xgw1    127.0.0.1:40000
+
+Create Session
+    [Arguments]    ${enb}    ${xgw}
+    Send    Create Session Request    ${enb}    ${xgw}
+    On Recieve    Modify Bearer Response    ${xgw}    ${enb}
+
+Delete Session
+    [Arguments]    ${enb}    ${xgw}
+    Send    Delete Session Request    ${enb}    ${xgw}
+    On Recieve    Delete Session Response    ${xgw}    ${enb}

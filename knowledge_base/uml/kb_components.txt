@@ -1,0 +1,19 @@
+@startuml
+package "Knowledge Base" as kb{
+[Communication] as comm
+[Script Runner] as sr
+[Feature Index] as fi
+[Context Manager] as cm
+[Script Pool] as sp
+[User Interface] as ui
+}
+tools == comm
+comm - sr
+sr -- fi
+fi -- sp
+sr -- cm
+
+sp -- ui
+cm -- ui
+ui == user
+@enduml

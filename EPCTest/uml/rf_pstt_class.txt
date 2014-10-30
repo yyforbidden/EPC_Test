@@ -1,0 +1,46 @@
+@startuml
+class EPCTest o--> class Topology
+class EPCTest o--> class MessageSequence
+class Topology *--> class Link
+class Topology *--> class Node
+class Topology -> class TopoParser
+class MessageSequence *--> class MessageBuffer
+class MessageSequence .> class Topology
+class MessageSequence o--> class CheckList: check
+class CheckList *--> class CheckItem
+class CheckList --> class ExpressionParser 
+class MessageSequence -left-> class Dispatcher: run script
+class Dispatcher --> class MessageSequence : report/exception
+
+class EPCTest {
+	start_dispatcher()
+	load_topology()
+	assign()
+	finish()
+	check()
+	<methods to compose messages()>
+}
+
+class Topology {
+	assign()
+}
+
+class MessageSequence {
+	<methods to compose messages()>
+	check()
+	finish()
+}
+
+class CheckList {
+	start_check()
+	exception()
+	save_variable()
+	save_report()
+}
+
+class CheckItem {
+	evaluate()
+	report()
+}
+
+@enduml

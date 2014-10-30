@@ -1,0 +1,10 @@
+@startuml
+:user: as u
+(User Interface) as ui
+(Context Manager) as cm
+
+u -- ui : 新建上下文:\n添加一类上下文，\n指定上下文类型名称\n和索引方法 
+u -- ui : 删除上下文:\n删除一类上下文，\n指定上下文类型名称
+u -- ui : 修改上下文:\n修改一类上下文，\n指定上下文类型名称，\n可以修改索引方法
+ui -- cm : 操作指定类型的上下文
+@enduml

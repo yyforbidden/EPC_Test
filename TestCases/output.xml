@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140915 16:01:47.703" generator="Robot 2.8.3 (Python 2.6.6 on win32)">
+<suite source="E:\eclipse_prj\EPC_Service_Demo_3\TestCases\mme.txt" id="s1" name="Mme">
+<test id="s1-t1" name="Attach &amp; PDP Activate">
+<kw type="setup" name="Initialize Environment">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="epctest.Load Topology">
+<doc>Load topology description from a file. </doc>
+<arguments>
+<arg>3g_topo.txt</arg>
+</arguments>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.750"></status>
+</kw>
+<kw type="kw" name="epctest.Assign">
+<doc>Assign an office in PSTT to the link in topology.</doc>
+<arguments>
+<arg>rnc</arg>
+<arg>sgsn</arg>
+<arg>pstt-yw-rnc1-sgsn1</arg>
+<arg>127.0.0.1:30000</arg>
+</arguments>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.750"></status>
+</kw>
+<kw type="kw" name="epctest.Send">
+<doc>Composing a message sending from simulator to dut.</doc>
+<arguments>
+<arg>Attach Request</arg>
+<arg>src=rnc</arg>
+<arg>dst=sgsn</arg>
+<arg>paras=imsi:"4601234567890", lai:"460123456"</arg>
+</arguments>
+<msg timestamp="20140915 16:01:47.765" level="INFO">[Info]: Initializing message buffer...
+[Info]: Message buffer for rnc--sgsn initialized.
+[Info]: "send Attach Request" added to buffer of rnc--sgsn
+[Info]: Found trigger: rnc</msg>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<kw type="kw" name="epctest.On Recieve">
+<doc>The start of the action to a message recieved.</doc>
+<arguments>
+<arg>Attach Accept</arg>
+<arg>src=sgsn</arg>
+<arg>dst=rnc</arg>
+</arguments>
+<msg timestamp="20140915 16:01:47.765" level="INFO">[Info]: "send Attach Accept" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<kw type="kw" name="epctest.Send">
+<doc>Composing a message sending from simulator to dut.</doc>
+<arguments>
+<arg>Attach Complete</arg>
+<arg>src=rnc</arg>
+<arg>dst=sgsn</arg>
+</arguments>
+<msg timestamp="20140915 16:01:47.765" level="INFO">[Info]: "send Attach Complete" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<kw type="kw" name="epctest.Send">
+<doc>Composing a message sending from simulator to dut.</doc>
+<arguments>
+<arg>Activate PDP Context Request</arg>
+<arg>src=rnc</arg>
+<arg>dst=sgsn</arg>
+</arguments>
+<msg timestamp="20140915 16:01:47.765" level="INFO">[Info]: "send Activate PDP Context Request" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<kw type="kw" name="epctest.On Recieve">
+<doc>The start of the action to a message recieved.</doc>
+<arguments>
+<arg>Activate PDP Context Accept</arg>
+<arg>src=sgsn</arg>
+<arg>dst=rnc</arg>
+<arg>paras=imsi:"4601234567890", lai:"460123456"</arg>
+</arguments>
+<msg timestamp="20140915 16:01:47.765" level="INFO">[Info]: "send Activate PDP Context Accept" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<kw type="kw" name="epctest.Finish">
+<doc>The stop point of test case. At least one stop point must be exist</doc>
+<arguments>
+<arg>rnc--sgsn</arg>
+</arguments>
+<msg timestamp="20140915 16:01:47.765" level="INFO">[Info]: "Finish" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<kw type="kw" name="epctest.Retrieve Data">
+<doc></doc>
+<arguments>
+<arg>rnc--sgsn</arg>
+<arg>result=@var1</arg>
+<arg>operation=MessageCount</arg>
+<arg>paras=message:"Attach Request"</arg>
+</arguments>
+<msg timestamp="20140915 16:01:47.765" level="INFO">[Info]: "Retrieve" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<kw type="kw" name="epctest.Retrieve Data">
+<doc></doc>
+<arguments>
+<arg>rnc--sgsn</arg>
+<arg>result=@var2</arg>
+<arg>operation=MessageParameterValue</arg>
+<arg>paras=message:"Attach Accept", paras_to_retrieve:"A_PARA"</arg>
+</arguments>
+<msg timestamp="20140915 16:01:47.765" level="INFO">[Info]: "Retrieve" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<kw type="kw" name="epctest.Check">
+<doc></doc>
+<arguments>
+<arg>@var1+1==@var2</arg>
+<arg>sample check</arg>
+</arguments>
+<msg timestamp="20140915 16:01:47.765" level="INFO">[Info]: "Check" added to check list</msg>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<kw type="kw" name="epctest.Check">
+<doc></doc>
+<arguments>
+<arg>@var1==1</arg>
+<arg>another check</arg>
+</arguments>
+<msg timestamp="20140915 16:01:47.765" level="INFO">[Info]: "Check" added to check list</msg>
+<status status="PASS" endtime="20140915 16:01:47.765" starttime="20140915 16:01:47.765"></status>
+</kw>
+<kw type="kw" name="epctest.Execute">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20140915 16:02:01.312" level="INFO">[Info]: Send script to tools and starting to run...
+[Info]: Scripts: [{'type': 'send script', 'office': u'pstt-yw-rnc1-sgsn1', 'script': [{'delay': 0, 'message_name': u'Attach Request', 'paras': [{'name': u'imsi', 'value': u'4601234567890'}, {'name': u'lai', 'value': u'460123456'}], 'step': 'Send Message', 'paras_to_save': [], 'paras_to_retrieve': []}, {'index': 0, 'message_name': u'Attach Accept', 'paras': [], 'step': 'Receive Message', 'paras_to_save': [], 'paras_to_retrieve': []}, {'delay': 0, 'message_name': u'Attach Complete', 'paras': [], 'step': 'Send Message', 'paras_to_save': [], 'paras_to_retrieve': []}, {'delay': 0, 'message_name': u'Activate PDP Context Request', 'paras': [], 'step': 'Send Message', 'paras_to_save': [], 'paras_to_retrieve': []}, {'index': 0, 'message_name': u'Activate PDP Context Accept', 'paras': [{'name': u'imsi', 'value': u'4601234567890'}, {'name': u'lai', 'value': u'460123456'}], 'step': 'Receive Message', 'paras_to_save': [], 'paras_to_retrieve': []}, {'step': 'Finish'}, {'paras': [{'name': u'message', 'value': u'Attach Request'}], 'step': 'Retrieve Data', 'end_message': [], 'variable': u'var1', 'operation': u'MessageCount', 'start_message': []}, {'paras': [{'name': u'message', 'value': u'Attach Accept'}, {'name': u'paras_to_retrieve', 'value': u'A_PARA'}], 'step': 'Retrieve Data', 'end_message': [], 'variable': u'var2', 'operation': u'MessageParameterValue', 'start_message': []}]}]
+[Info]: Addresses: {u'pstt-yw-rnc1-sgsn1': (u'127.0.0.1', 30000)}
+[Info]: Timer handler started
+[Info]: Connecting to tool at (u'127.0.0.1', 30000)...
+[Info]: All tools connected.
+[Info]: Sender started.
+[Info]: Receiver started.
+[Info]: Sending script to pstt-yw-rnc1-sgsn1...
+[Info]: Timer wait_script_received(1.000000) started
+[Info]: Receive script received from NE pstt-yw-rnc1-sgsn1 at state wait_script_received
+[Info]: 1 scripts received by tools.
+[Info]: All scriptd sent.
+[Info]: Timer wait_script_received killed
+[Info]: Triggering: sending START to pstt-yw-rnc1-sgsn1...
+[Info]: Timer wait_started(1.000000) started
+[Info]: Receive started from NE pstt-yw-rnc1-sgsn1 at state wait_started
+[Info]: 1 scripts started by tools.
+[Info]: All scriptd started.
+[Info]: Sending buffered events and variables...
+[Info]: Timer wait_started killed
+[Info]: Receive report from NE pstt-yw-rnc1-sgsn1 at state started
+[Info]: Receive report on STARTED state
+[Info]: All report received, test finished.
+[Info]: Timer wait_report killed
+[Info]: Tool at (u'127.0.0.1', 30000) closed.
+[Info]: Test case complete, checking...
+[Info]: Link broken
+[Info]: Tool at (u'127.0.0.1', 30000) closed.
+[Info]: 
+Check sample check: @var1+1==@var2
+Result: Pass
+Detail: 
+Variables: var1=1, var2=2
+
+[Info]: 
+Check another check: @var1==1
+Result: Pass
+Detail: 
+Variables: var1=1, var2=2</msg>
+<status status="PASS" endtime="20140915 16:02:01.312" starttime="20140915 16:01:47.765"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140915 16:02:01.312" critical="yes" starttime="20140915 16:01:47.750"></status>
+</test>
+<test id="s1-t2" name="Attach &amp; PDP Activate - using keyword">
+<kw type="setup" name="Initialize Environment">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="epctest.Load Topology">
+<doc>Load topology description from a file. </doc>
+<arguments>
+<arg>3g_topo.txt</arg>
+</arguments>
+<status status="PASS" endtime="20140915 16:02:01.312" starttime="20140915 16:02:01.312"></status>
+</kw>
+<kw type="kw" name="epctest.Assign">
+<doc>Assign an office in PSTT to the link in topology.</doc>
+<arguments>
+<arg>rnc</arg>
+<arg>sgsn</arg>
+<arg>pstt-yw-rnc1-sgsn1</arg>
+<arg>127.0.0.1:30000</arg>
+</arguments>
+<status status="PASS" endtime="20140915 16:02:01.312" starttime="20140915 16:02:01.312"></status>
+</kw>
+<status status="PASS" endtime="20140915 16:02:01.312" starttime="20140915 16:02:01.312"></status>
+</kw>
+<kw type="kw" name="Attach">
+<doc></doc>
+<arguments>
+<arg>rnc</arg>
+<arg>sgsn</arg>
+<arg>imsi=4601234567890</arg>
+<arg>lai=460123456</arg>
+</arguments>
+<kw type="kw" name="epctest.Send">
+<doc>Composing a message sending from simulator to dut.</doc>
+<arguments>
+<arg>Attach Request</arg>
+<arg>src=${rnc}</arg>
+<arg>dst=${sgsn}</arg>
+<arg>paras=imsi:"${imsi}", lai:"${lai}"</arg>
+</arguments>
+<msg timestamp="20140915 16:02:01.328" level="INFO">[Info]: Initializing message buffer...
+[Info]: Message buffer for rnc--sgsn initialized.
+[Info]: "send Attach Request" added to buffer of rnc--sgsn
+[Info]: Found trigger: rnc</msg>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<kw type="kw" name="epctest.On Recieve">
+<doc>The start of the action to a message recieved.</doc>
+<arguments>
+<arg>Attach Accept</arg>
+<arg>src=${sgsn}</arg>
+<arg>dst=${rnc}</arg>
+</arguments>
+<msg timestamp="20140915 16:02:01.328" level="INFO">[Info]: "send Attach Accept" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<kw type="kw" name="epctest.Send">
+<doc>Composing a message sending from simulator to dut.</doc>
+<arguments>
+<arg>Attach Complete</arg>
+<arg>src=${rnc}</arg>
+<arg>dst=${sgsn}</arg>
+</arguments>
+<msg timestamp="20140915 16:02:01.328" level="INFO">[Info]: "send Attach Complete" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<kw type="kw" name="PDP Activation">
+<doc></doc>
+<arguments>
+<arg>rnc</arg>
+<arg>sgsn</arg>
+<arg>imsi=4601234567890</arg>
+<arg>lai=460123456</arg>
+</arguments>
+<kw type="kw" name="epctest.Send">
+<doc>Composing a message sending from simulator to dut.</doc>
+<arguments>
+<arg>Activate PDP Context Request</arg>
+<arg>src=${rnc}</arg>
+<arg>dst=${sgsn}</arg>
+<arg>paras=imsi:"${imsi}", lai:"${lai}"</arg>
+</arguments>
+<msg timestamp="20140915 16:02:01.328" level="INFO">[Info]: "send Activate PDP Context Request" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<kw type="kw" name="epctest.On Recieve">
+<doc>The start of the action to a message recieved.</doc>
+<arguments>
+<arg>Activate PDP Context Accept</arg>
+<arg>src=${sgsn}</arg>
+<arg>dst=${rnc}</arg>
+</arguments>
+<msg timestamp="20140915 16:02:01.328" level="INFO">[Info]: "send Activate PDP Context Accept" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<kw type="kw" name="epctest.Finish">
+<doc>The stop point of test case. At least one stop point must be exist</doc>
+<arguments>
+<arg>rnc--sgsn</arg>
+</arguments>
+<msg timestamp="20140915 16:02:01.328" level="INFO">[Info]: "Finish" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<kw type="kw" name="epctest.Retrieve Data">
+<doc></doc>
+<arguments>
+<arg>rnc--sgsn</arg>
+<arg>result=@var1</arg>
+<arg>operation=MessageCount</arg>
+<arg>paras=message:"Attach Request"</arg>
+</arguments>
+<msg timestamp="20140915 16:02:01.328" level="INFO">[Info]: "Retrieve" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<kw type="kw" name="epctest.Retrieve Data">
+<doc></doc>
+<arguments>
+<arg>rnc--sgsn</arg>
+<arg>result=@var2</arg>
+<arg>operation=MessageParameterValue</arg>
+<arg>paras=message:"Attach Accept", paras_to_retrieve:"A_PARA"</arg>
+</arguments>
+<msg timestamp="20140915 16:02:01.328" level="INFO">[Info]: "Retrieve" added to buffer of rnc--sgsn</msg>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<kw type="kw" name="epctest.Check">
+<doc></doc>
+<arguments>
+<arg>@var1+1==@var2</arg>
+<arg>sample check</arg>
+</arguments>
+<msg timestamp="20140915 16:02:01.328" level="INFO">[Info]: "Check" added to check list</msg>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<kw type="kw" name="epctest.Check">
+<doc></doc>
+<arguments>
+<arg>@var1==1</arg>
+<arg>another check</arg>
+</arguments>
+<msg timestamp="20140915 16:02:01.328" level="INFO">[Info]: "Check" added to check list</msg>
+<status status="PASS" endtime="20140915 16:02:01.328" starttime="20140915 16:02:01.328"></status>
+</kw>
+<kw type="kw" name="epctest.Execute">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20140915 16:02:14.828" level="INFO">[Info]: Send script to tools and starting to run...
+[Info]: Scripts: [{'type': 'send script', 'office': u'pstt-yw-rnc1-sgsn1', 'script': [{'delay': 0, 'message_name': u'Attach Request', 'paras': [{'name': u'imsi', 'value': u'4601234567890'}, {'name': u'lai', 'value': u'460123456'}], 'step': 'Send Message', 'paras_to_save': [], 'paras_to_retrieve': []}, {'index': 0, 'message_name': u'Attach Accept', 'paras': [], 'step': 'Receive Message', 'paras_to_save': [], 'paras_to_retrieve': []}, {'delay': 0, 'message_name': u'Attach Complete', 'paras': [], 'step': 'Send Message', 'paras_to_save': [], 'paras_to_retrieve': []}, {'delay': 0, 'message_name': u'Activate PDP Context Request', 'paras': [{'name': u'imsi', 'value': u'4601234567890'}, {'name': u'lai', 'value': u'460123456'}], 'step': 'Send Message', 'paras_to_save': [], 'paras_to_retrieve': []}, {'index': 0, 'message_name': u'Activate PDP Context Accept', 'paras': [], 'step': 'Receive Message', 'paras_to_save': [], 'paras_to_retrieve': []}, {'step': 'Finish'}, {'paras': [{'name': u'message', 'value': u'Attach Request'}], 'step': 'Retrieve Data', 'end_message': [], 'variable': u'var1', 'operation': u'MessageCount', 'start_message': []}, {'paras': [{'name': u'message', 'value': u'Attach Accept'}, {'name': u'paras_to_retrieve', 'value': u'A_PARA'}], 'step': 'Retrieve Data', 'end_message': [], 'variable': u'var2', 'operation': u'MessageParameterValue', 'start_message': []}]}]
+[Info]: Addresses: {u'pstt-yw-rnc1-sgsn1': (u'127.0.0.1', 30000)}
+[Info]: Timer handler started
+[Info]: Connecting to tool at (u'127.0.0.1', 30000)...
+[Info]: All tools connected.
+[Info]: Sender started.
+[Info]: Receiver started.
+[Info]: Sending script to pstt-yw-rnc1-sgsn1...
+[Info]: Timer wait_script_received(1.000000) started
+[Info]: Receive script received from NE pstt-yw-rnc1-sgsn1 at state wait_script_received
+[Info]: 1 scripts received by tools.
+[Info]: All scriptd sent.
+[Info]: Timer wait_script_received killed
+[Info]: Triggering: sending START to pstt-yw-rnc1-sgsn1...
+[Info]: Timer wait_started(1.000000) started
+[Info]: Receive started from NE pstt-yw-rnc1-sgsn1 at state wait_started
+[Info]: 1 scripts started by tools.
+[Info]: All scriptd started.
+[Info]: Sending buffered events and variables...
+[Info]: Timer wait_started killed
+[Info]: Receive report from NE pstt-yw-rnc1-sgsn1 at state started
+[Info]: Receive report on STARTED state
+[Info]: All report received, test finished.
+[Info]: Timer wait_report killed
+[Info]: Tool at (u'127.0.0.1', 30000) closed.
+[Info]: Test case complete, checking...
+[Info]: Link broken
+[Info]: Tool at (u'127.0.0.1', 30000) closed.
+[Info]: 
+Check sample check: @var1+1==@var2
+Result: Pass
+Detail: 
+Variables: var1=1, var2=2
+
+[Info]: 
+Check another check: @var1==1
+Result: Pass
+Detail: 
+Variables: var1=1, var2=2</msg>
+<status status="PASS" endtime="20140915 16:02:14.828" starttime="20140915 16:02:01.328"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140915 16:02:14.828" critical="yes" starttime="20140915 16:02:01.312"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140915 16:02:14.828" starttime="20140915 16:01:47.703"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="2" id="s1" name="Mme">Mme</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

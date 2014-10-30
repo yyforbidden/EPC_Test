@@ -1,0 +1,8 @@
+@rnc
+@sgsn
+@ggsn
+@hlr
+
+@rnc--@sgsn
+@sgsn--@ggsn
+@sgsn--@hlr

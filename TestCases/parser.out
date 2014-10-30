@@ -1,0 +1,202 @@
+Created by PLY version 3.4 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> stmt_list
+Rule 1     stmt_list -> stmt
+Rule 2     stmt_list -> stmt stmt_list
+Rule 3     stmt -> NODE
+Rule 4     stmt -> NODE : attr_list
+Rule 5     stmt -> NODE LINK NODE
+Rule 6     stmt -> NODE LINK NODE : attr_list
+Rule 7     attr_list -> attr
+Rule 8     attr_list -> attr , attr_list
+Rule 9     attr -> LITERAL = LITERAL
+
+Terminals, with rules where they appear
+
+,                    : 8
+:                    : 4 6
+=                    : 9
+LINK                 : 5 6
+LITERAL              : 9 9
+NODE                 : 3 4 5 5 6 6
+error                : 
+
+Nonterminals, with rules where they appear
+
+attr                 : 7 8
+attr_list            : 4 6 8
+stmt                 : 1 2
+stmt_list            : 2 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . stmt_list
+    (1) stmt_list -> . stmt
+    (2) stmt_list -> . stmt stmt_list
+    (3) stmt -> . NODE
+    (4) stmt -> . NODE : attr_list
+    (5) stmt -> . NODE LINK NODE
+    (6) stmt -> . NODE LINK NODE : attr_list
+
+    NODE            shift and go to state 2
+
+    stmt_list                      shift and go to state 1
+    stmt                           shift and go to state 3
+
+state 1
+
+    (0) S' -> stmt_list .
+
+
+
+state 2
+
+    (3) stmt -> NODE .
+    (4) stmt -> NODE . : attr_list
+    (5) stmt -> NODE . LINK NODE
+    (6) stmt -> NODE . LINK NODE : attr_list
+
+    NODE            reduce using rule 3 (stmt -> NODE .)
+    $end            reduce using rule 3 (stmt -> NODE .)
+    :               shift and go to state 4
+    LINK            shift and go to state 5
+
+
+state 3
+
+    (1) stmt_list -> stmt .
+    (2) stmt_list -> stmt . stmt_list
+    (1) stmt_list -> . stmt
+    (2) stmt_list -> . stmt stmt_list
+    (3) stmt -> . NODE
+    (4) stmt -> . NODE : attr_list
+    (5) stmt -> . NODE LINK NODE
+    (6) stmt -> . NODE LINK NODE : attr_list
+
+    $end            reduce using rule 1 (stmt_list -> stmt .)
+    NODE            shift and go to state 2
+
+    stmt_list                      shift and go to state 6
+    stmt                           shift and go to state 3
+
+state 4
+
+    (4) stmt -> NODE : . attr_list
+    (7) attr_list -> . attr
+    (8) attr_list -> . attr , attr_list
+    (9) attr -> . LITERAL = LITERAL
+
+    LITERAL         shift and go to state 9
+
+    attr_list                      shift and go to state 8
+    attr                           shift and go to state 7
+
+state 5
+
+    (5) stmt -> NODE LINK . NODE
+    (6) stmt -> NODE LINK . NODE : attr_list
+
+    NODE            shift and go to state 10
+
+
+state 6
+
+    (2) stmt_list -> stmt stmt_list .
+
+    $end            reduce using rule 2 (stmt_list -> stmt stmt_list .)
+
+
+state 7
+
+    (7) attr_list -> attr .
+    (8) attr_list -> attr . , attr_list
+
+    NODE            reduce using rule 7 (attr_list -> attr .)
+    $end            reduce using rule 7 (attr_list -> attr .)
+    ,               shift and go to state 11
+
+
+state 8
+
+    (4) stmt -> NODE : attr_list .
+
+    NODE            reduce using rule 4 (stmt -> NODE : attr_list .)
+    $end            reduce using rule 4 (stmt -> NODE : attr_list .)
+
+
+state 9
+
+    (9) attr -> LITERAL . = LITERAL
+
+    =               shift and go to state 12
+
+
+state 10
+
+    (5) stmt -> NODE LINK NODE .
+    (6) stmt -> NODE LINK NODE . : attr_list
+
+    NODE            reduce using rule 5 (stmt -> NODE LINK NODE .)
+    $end            reduce using rule 5 (stmt -> NODE LINK NODE .)
+    :               shift and go to state 13
+
+
+state 11
+
+    (8) attr_list -> attr , . attr_list
+    (7) attr_list -> . attr
+    (8) attr_list -> . attr , attr_list
+    (9) attr -> . LITERAL = LITERAL
+
+    LITERAL         shift and go to state 9
+
+    attr                           shift and go to state 7
+    attr_list                      shift and go to state 14
+
+state 12
+
+    (9) attr -> LITERAL = . LITERAL
+
+    LITERAL         shift and go to state 15
+
+
+state 13
+
+    (6) stmt -> NODE LINK NODE : . attr_list
+    (7) attr_list -> . attr
+    (8) attr_list -> . attr , attr_list
+    (9) attr -> . LITERAL = LITERAL
+
+    LITERAL         shift and go to state 9
+
+    attr_list                      shift and go to state 16
+    attr                           shift and go to state 7
+
+state 14
+
+    (8) attr_list -> attr , attr_list .
+
+    NODE            reduce using rule 8 (attr_list -> attr , attr_list .)
+    $end            reduce using rule 8 (attr_list -> attr , attr_list .)
+
+
+state 15
+
+    (9) attr -> LITERAL = LITERAL .
+
+    ,               reduce using rule 9 (attr -> LITERAL = LITERAL .)
+    NODE            reduce using rule 9 (attr -> LITERAL = LITERAL .)
+    $end            reduce using rule 9 (attr -> LITERAL = LITERAL .)
+
+
+state 16
+
+    (6) stmt -> NODE LINK NODE : attr_list .
+
+    NODE            reduce using rule 6 (stmt -> NODE LINK NODE : attr_list .)
+    $end            reduce using rule 6 (stmt -> NODE LINK NODE : attr_list .)
+

@@ -1,0 +1,22 @@
+{
+"scripts": [{"feature": {"protocol": "NAS",
+			 			 "direction": "RNC<-SGSN",
+						 "interface": "Iu-PS-Control",
+						 "message": "Authentication Request",
+						 "parameters": {"Authentication Request.a": "1",
+						 				"Authentication Request.b": "2"}},
+			 "script": {"module": "response_to_authentication_request",
+			 			"path": "demo_auth_req.py"}},
+			 			
+			 {"feature": {"protocol": "NAS",
+			 			 "direction": "RNC<-SGSN",
+						 "interface": "Iu-PS-Control",
+						 "message": "Authentication Request",
+						 "parameters": {"Authentication Request.a": "1",
+						 				"Authentication Request.b": "2",
+						 				"Authentication Request.c": "3",
+						 				"Data Transfer.x": "100"}},
+			 "script": {"module": "response_to_authentication_request_2",
+			 			"path": "demo_auth_req_2.py"}}
+		   ]
+}

@@ -1,0 +1,15 @@
+@startuml
+[*] -down-> WAIT_SCRIPT_RECEIVED: run / \nsend script
+WAIT_SCRIPT_RECEIVED -> WAIT_SCRIPT_RECEIVED: (not all) script received /\n null
+WAIT_SCRIPT_RECEIVED -down-> WAIT_STARTED: (all) script received / \nsend start
+WAIT_SCRIPT_RECEIVED -left-> FINISHED: exception / \nsend stop
+WAIT_STARTED -left-> STARTED: (all) started / \nbroadcast buffered events & vars
+WAIT_STARTED --> WAIT_STARTED: event, variable / \nbuffer, \n(not all) started / \nnull
+WAIT_STARTED -up-> FINISHED: exception / \nsend stop
+STARTED -> STARTED: \n\n\nevent, variable / \nbroadcast
+STARTED -up-> FINISHED: (all) report / \nsave report,\nexception / \nsend stop
+STARTED -up-> WAIT_REPORT: (not all) report / \nsave report
+WAIT_REPORT -right-> FINISHED: (all) report / \nsave report, \n exception / \nsend stop
+WAIT_REPORT -> WAIT_REPORT: \n\n\n(not all) report / \nsave report
+FINISHED -up-> [*]: done!
+@enduml
